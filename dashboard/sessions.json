@@ -3,29 +3,29 @@
     {
       "sessionId": "12647903-6541-4e9e-9ccb-dfc879a0f996",
       "path": "/home/node/.openclaw/agents/main/sessions/12647903-6541-4e9e-9ccb-dfc879a0f996.jsonl",
-      "sizeBytes": 670879,
+      "sizeBytes": 675002,
       "startedAt": "2026-03-12T14:59:18.646Z",
-      "lastTimestamp": "2026-03-12T17:43:42.087Z",
+      "lastTimestamp": "2026-03-12T18:03:54.411Z",
       "dominantModel": "gpt-5.4",
       "models": {
         "delivery-mirror": 3,
-        "gpt-5.4": 69
+        "gpt-5.4": 70
       },
-      "assistantTurns": 72,
+      "assistantTurns": 73,
       "usage": {
-        "input": 1286331,
-        "output": 11731,
-        "cacheRead": 3653504,
+        "input": 1373907,
+        "output": 11854,
+        "cacheRead": 3657088,
         "cacheWrite": 0,
-        "total": 4951566,
-        "cost": 4.3051685,
-        "assistantTurns": 72
+        "total": 5042849,
+        "cost": 4.5268495,
+        "assistantTurns": 73
       },
       "firstUserSnippet": "A new session was started via /new or /reset. Execute your Session Startup sequence now - read the required files before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and mood. Keep it to 1-3 sentences and ask what they want to do. If the runtime model differs from default_model in the system prompt, mention the default model. Do not mention internal steps, files, tools, or reasoning.\nCurrent time: Thursday, March 12th, 2026 — 2:59 PM (UTC) / 2026-03-12 14:59 UTC",
       "kindGuess": "direct",
       "roleCounts": {
-        "assistant": 72,
-        "user": 21,
+        "assistant": 73,
+        "user": 22,
         "toolResult": 61
       }
     },
@@ -172,29 +172,29 @@
     {
       "sessionId": "3303e938-de33-47c2-aba1-badc03bdefd6",
       "path": "/home/node/.openclaw/agents/main/sessions/3303e938-de33-47c2-aba1-badc03bdefd6.jsonl",
-      "sizeBytes": 20652,
+      "sizeBytes": 25371,
       "startedAt": "2026-03-12T18:02:38.946Z",
-      "lastTimestamp": "2026-03-12T18:02:59.775Z",
+      "lastTimestamp": "2026-03-12T18:03:22.320Z",
       "dominantModel": "gpt-5.4",
       "models": {
-        "gpt-5.4": 3
+        "gpt-5.4": 5
       },
-      "assistantTurns": 3,
+      "assistantTurns": 5,
       "usage": {
-        "input": 10944,
-        "output": 707,
-        "cacheRead": 27392,
+        "input": 21472,
+        "output": 832,
+        "cacheRead": 44800,
         "cacheWrite": 0,
-        "total": 39043,
-        "cost": 0.044813,
-        "assistantTurns": 3
+        "total": 67104,
+        "cost": 0.07736000000000001,
+        "assistantTurns": 5
       },
       "firstUserSnippet": "[cron:fbf6d8a1-2858-459c-9484-313cca777a0a token-dashboard-sync-every-30m] In /home/node/.openclaw/workspace/token-dashboard-github, run ./scripts/sync-data-from-env.sh. If .sync.env is missing, invalid, or sync fails, report the error briefly. If sync succeeds, briefly report success with the current UTC time. Do not reveal or print the token value.\nCurrent time: Thursday, March 12th, 2026 — 6:02 PM (UTC) / 2026-03-12 18:02 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.",
       "kindGuess": "direct",
       "roleCounts": {
         "user": 1,
-        "assistant": 3,
-        "toolResult": 5
+        "assistant": 5,
+        "toolResult": 7
       }
     },
     {
@@ -416,6 +416,34 @@
       "roleCounts": {
         "user": 1,
         "assistant": 1
+      }
+    },
+    {
+      "sessionId": "807fae85-906c-42d5-aba2-988baaa43e1b",
+      "path": "/home/node/.openclaw/agents/main/sessions/807fae85-906c-42d5-aba2-988baaa43e1b.jsonl",
+      "sizeBytes": 15411,
+      "startedAt": "2026-03-12T18:15:59.902Z",
+      "lastTimestamp": "2026-03-12T18:16:24.300Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 3
+      },
+      "assistantTurns": 3,
+      "usage": {
+        "input": 9180,
+        "output": 447,
+        "cacheRead": 27648,
+        "cacheWrite": 0,
+        "total": 37275,
+        "cost": 0.036567,
+        "assistantTurns": 3
+      },
+      "firstUserSnippet": "[cron:91a95c51-be70-4429-ba8b-634d7f943e84 gooaye-podcast-auto-pipeline] Run /home/node/.openclaw/workspace/content-pipeline/process-gooaye-latest.py. If there is no new unseen episode, report briefly that there was nothing new. If there is a new episode, let the script create intake, download audio, transcribe with Groq chunking when needed, and process it through the content pipeline. Summarize the result briefly without exposing any secrets.\nCurrent time: Thursday, March 12th, 2026 — 6:15 PM (UTC) / 2026-03-12 18:15 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should ",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 1,
+        "assistant": 3,
+        "toolResult": 3
       }
     },
     {
@@ -693,6 +721,34 @@
         "user": 1,
         "assistant": 4,
         "toolResult": 6
+      }
+    },
+    {
+      "sessionId": "f39f3fa2-532e-49fa-b898-348a256197b1",
+      "path": "/home/node/.openclaw/agents/main/sessions/f39f3fa2-532e-49fa-b898-348a256197b1.jsonl",
+      "sizeBytes": 17979,
+      "startedAt": "2026-03-12T18:32:38.948Z",
+      "lastTimestamp": "2026-03-12T18:32:54.795Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 2
+      },
+      "assistantTurns": 2,
+      "usage": {
+        "input": 9723,
+        "output": 667,
+        "cacheRead": 14976,
+        "cacheWrite": 0,
+        "total": 25366,
+        "cost": 0.03805650000000001,
+        "assistantTurns": 2
+      },
+      "firstUserSnippet": "[cron:fbf6d8a1-2858-459c-9484-313cca777a0a token-dashboard-sync-every-30m] In /home/node/.openclaw/workspace/token-dashboard-github, run ./scripts/sync-data-from-env.sh. If .sync.env is missing, invalid, or sync fails, report the error briefly. If sync succeeds, briefly report success with the current UTC time. Do not reveal or print the token value.\nCurrent time: Thursday, March 12th, 2026 — 6:32 PM (UTC) / 2026-03-12 18:32 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 1,
+        "assistant": 2,
+        "toolResult": 4
       }
     },
     {
