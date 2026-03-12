@@ -1,0 +1,22 @@
+{
+  "generatedAtUtc": "2026-03-12T00:00:00Z",
+  "counts": {
+    "files": 0,
+    "sessions": 0,
+    "cronRunsDetected": 0,
+    "startupTurnsDetected": 0
+  },
+  "startupBaseline": null,
+  "recommendations": [
+    {
+      "priority": "medium",
+      "title": "等待首次同步",
+      "detail": "data branch 已初始化，但還沒有從 OpenClaw workspace 推送真正的 dashboard JSON。執行 scripts/sync-data.sh 後就會出現即時資料。",
+      "targets": [
+        "dashboard/*.json"
+      ],
+      "projectedSavingsTokens": "n/a"
+    }
+  ],
+  "topFilesByEstimatedTokens": []
+}

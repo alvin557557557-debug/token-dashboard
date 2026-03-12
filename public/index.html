@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenClaw Token Dashboard</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #0b1020; color: #e7ecff; }
+    header { padding: 20px 24px; border-bottom: 1px solid #24304f; position: sticky; top: 0; background: #0b1020; }
+    main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+    .muted { color: #9fb0d9; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card { background: #121933; border: 1px solid #24304f; border-radius: 14px; padding: 16px; }
+    h1,h2,h3 { margin: 0 0 10px; }
+    .big { font-size: 28px; font-weight: 700; }
+    a { color: #88b4ff; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid #24304f; padding: 8px; text-align: left; vertical-align: top; }
+    .ok { color: #74e49b; }
+    .warn { color: #ffd166; }
+    .err { color: #ff7b7b; }
+    code { background: #0f1530; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OpenClaw Token Dashboard</h1>
+    <div class="muted">GitHub 完整版骨架 · 前端從 data branch 讀取最新 JSON</div>
+  </header>
+  <main>
+    <div class="grid">
+      <section class="card"><h3>資料來源</h3><div id="source" class="muted">載入中...</div></section>
+      <section class="card"><h3>更新時間</h3><div id="generatedAt" class="big">--</div></section>
+      <section class="card"><h3>檔案數</h3><div id="filesCount" class="big">--</div></section>
+      <section class="card"><h3>Sessions</h3><div id="sessionsCount" class="big">--</div></section>
+    </div>
+
+    <section class="card" style="margin-top:16px;">
+      <h2>Recommendations</h2>
+      <div id="recs" class="muted">載入中...</div>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <h2>Top Files by Estimated Tokens</h2>
+      <table>
+        <thead><tr><th>Path</th><th>Tokens</th><th>Size KB</th></tr></thead>
+        <tbody id="topFiles"></tbody>
+      </table>
+    </section>
+
+    <section class="card" style="margin-top:16px;">
+      <h2>Status</h2>
+      <div id="status" class="muted">初始化中...</div>
+    </section>
+  </main>
+
+  <script>
+    const DEFAULT_CONFIG = {
+      owner: 'YOUR_GITHUB_OWNER',
+      repo: 'YOUR_REPO_NAME',
+      branch: 'data'
+    };
+
+    const qs = new URLSearchParams(location.search);
+    const CONFIG = {
+      owner: qs.get('owner') || window.DASHBOARD_OWNER || DEFAULT_CONFIG.owner,
+      repo: qs.get('repo') || window.DASHBOARD_REPO || DEFAULT_CONFIG.repo,
+      branch: qs.get('branch') || window.DASHBOARD_BRANCH || DEFAULT_CONFIG.branch,
+    };
+    CONFIG.base = `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/dashboard`;
+
+    async function getJson(name) {
+      const url = `${CONFIG.base}/${name}`;
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`${name}: HTTP ${res.status}`);
+      return await res.json();
+    }
+
+    function fmt(v) { return (v ?? '--').toLocaleString?.() ?? String(v); }
+
+    async function boot() {
+      const statusEl = document.getElementById('status');
+      document.getElementById('source').textContent = `${CONFIG.owner}/${CONFIG.repo}@${CONFIG.branch}`;
+      if (CONFIG.owner === 'YOUR_GITHUB_OWNER' || CONFIG.repo === 'YOUR_REPO_NAME') {
+        statusEl.innerHTML = '<span class="warn">尚未設定 GitHub repo</span>：請在網址加上 <code>?owner=你的帳號&repo=你的repo</code>，或直接把 <code>public/index.html</code> 內預設值改掉。';
+        return;
+      }
+      try {
+        const summary = await getJson('summary.json');
+        document.getElementById('generatedAt').textContent = summary.generatedAtUtc || '--';
+        document.getElementById('filesCount').textContent = fmt(summary.counts?.files);
+        document.getElementById('sessionsCount').textContent = fmt(summary.counts?.sessions);
+
+        const recs = summary.recommendations || [];
+        document.getElementById('recs').innerHTML = recs.length
+          ? recs.map(r => `<div style="margin-bottom:12px;"><strong>${r.title}</strong><div class="muted">${r.detail}</div></div>`).join('')
+          : '<span class="muted">沒有建議</span>';
+
+        const rows = (summary.topFilesByEstimatedTokens || []).slice(0, 12)
+          .map(f => `<tr><td><code>${f.path}</code></td><td>${fmt(f.estimatedTokens)}</td><td>${fmt(f.sizeKB)}</td></tr>`)
+          .join('');
+        document.getElementById('topFiles').innerHTML = rows || '<tr><td colspan="3">No data</td></tr>';
+        statusEl.innerHTML = '<span class="ok">已成功載入 data branch JSON</span>';
+      } catch (e) {
+        statusEl.innerHTML = `<span class="err">載入失敗：</span> ${e.message}`;
+      }
+    }
+    boot();
+  </script>
+</body>
+</html>

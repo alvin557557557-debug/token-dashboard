@@ -1,0 +1,21 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Build / temp
+.tmp/
+tmp/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
