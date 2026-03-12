@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T08:32:59Z",
+  "generatedAtUtc": "2026-03-12T09:03:07Z",
   "counts": {
-    "files": 102,
-    "sessions": 7,
+    "files": 5622,
+    "sessions": 8,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -50,6 +50,36 @@
       "lines": 1
     },
     {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/hf_xet-1.4.0.dist-info/sboms/hf_xet.cyclonedx.json",
+      "name": "hf_xet.cyclonedx.json",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/hf_xet-1.4.0.dist-info/sboms",
+      "ext": ".json",
+      "sizeBytes": 397881,
+      "sizeKB": 388.56,
+      "estimatedTokens": 180849,
+      "lines": 12107
+    },
+    {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/onnxruntime/ThirdPartyNotices.txt",
+      "name": "ThirdPartyNotices.txt",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/onnxruntime",
+      "ext": ".txt",
+      "sizeBytes": 325054,
+      "sizeKB": 317.44,
+      "estimatedTokens": 147735,
+      "lines": 6121
+    },
+    {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/numpy-2.4.3.dist-info/licenses/LICENSE.txt",
+      "name": "LICENSE.txt",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/numpy-2.4.3.dist-info/licenses",
+      "ext": ".txt",
+      "sizeBytes": 46794,
+      "sizeKB": 45.7,
+      "estimatedTokens": 21270,
+      "lines": 935
+    },
+    {
       "path": "archives/session-summaries/2026-03-10-tools-profile.md",
       "name": "2026-03-10-tools-profile.md",
       "dir": "archives/session-summaries",
@@ -58,6 +88,16 @@
       "sizeKB": 56.48,
       "estimatedTokens": 21016,
       "lines": 1342
+    },
+    {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/setuptools/config/setuptools.schema.json",
+      "name": "setuptools.schema.json",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/setuptools/config",
+      "ext": ".json",
+      "sizeBytes": 16047,
+      "sizeKB": 15.67,
+      "estimatedTokens": 7295,
+      "lines": 433
     },
     {
       "path": "AGENTS.md",
@@ -90,6 +130,16 @@
       "lines": 320
     },
     {
+      "path": "content-pipeline/audio-transcription-workflow.md",
+      "name": "audio-transcription-workflow.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 7763,
+      "sizeKB": 7.58,
+      "estimatedTokens": 3495,
+      "lines": 365
+    },
+    {
       "path": "archives/session-summaries/2026-03-10-read-soul-md.md",
       "name": "2026-03-10-read-soul-md.md",
       "dir": "archives/session-summaries",
@@ -100,6 +150,16 @@
       "lines": 333
     },
     {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates/modelcard_template.md",
+      "name": "modelcard_template.md",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates",
+      "ext": ".md",
+      "sizeBytes": 6870,
+      "sizeKB": 6.71,
+      "estimatedTokens": 3123,
+      "lines": 200
+    },
+    {
       "path": "content-pipeline/drafts/openclaw-multi-agents-guide.yaml",
       "name": "openclaw-multi-agents-guide.yaml",
       "dir": "content-pipeline/drafts",
@@ -108,6 +168,16 @@
       "sizeKB": 13.5,
       "estimatedTokens": 2589,
       "lines": 27
+    },
+    {
+      "path": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates/datasetcard_template.md",
+      "name": "datasetcard_template.md",
+      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates",
+      "ext": ".md",
+      "sizeBytes": 5503,
+      "sizeKB": 5.37,
+      "estimatedTokens": 2502,
+      "lines": 143
     },
     {
       "path": "token-dashboard-auto/app/dashboard/summary.json",
@@ -168,76 +238,6 @@
       "sizeKB": 4.04,
       "estimatedTokens": 1765,
       "lines": 89
-    },
-    {
-      "path": "token-dashboard-deploy/dashboard/sessions.json",
-      "name": "sessions.json",
-      "dir": "token-dashboard-deploy/dashboard",
-      "ext": ".json",
-      "sizeBytes": 4137,
-      "sizeKB": 4.04,
-      "estimatedTokens": 1765,
-      "lines": 89
-    },
-    {
-      "path": "content-pipeline/transcript-workflow.md",
-      "name": "transcript-workflow.md",
-      "dir": "content-pipeline",
-      "ext": ".md",
-      "sizeBytes": 3882,
-      "sizeKB": 3.79,
-      "estimatedTokens": 1762,
-      "lines": 163
-    },
-    {
-      "path": "skills/youtube-transcript-yt-dlp/SKILL.md",
-      "name": "SKILL.md",
-      "dir": "skills/youtube-transcript-yt-dlp",
-      "ext": ".md",
-      "sizeBytes": 3854,
-      "sizeKB": 3.76,
-      "estimatedTokens": 1751,
-      "lines": 94
-    },
-    {
-      "path": "automation/TASKS.md",
-      "name": "TASKS.md",
-      "dir": "automation",
-      "ext": ".md",
-      "sizeBytes": 4140,
-      "sizeKB": 4.04,
-      "estimatedTokens": 1644,
-      "lines": 128
-    },
-    {
-      "path": "automation/codex-request.md",
-      "name": "codex-request.md",
-      "dir": "automation",
-      "ext": ".md",
-      "sizeBytes": 2950,
-      "sizeKB": 2.88,
-      "estimatedTokens": 1276,
-      "lines": 78
-    },
-    {
-      "path": "content-pipeline/prompts/metadata-generation.md",
-      "name": "metadata-generation.md",
-      "dir": "content-pipeline/prompts",
-      "ext": ".md",
-      "sizeBytes": 2617,
-      "sizeKB": 2.56,
-      "estimatedTokens": 1190,
-      "lines": 125
-    },
-    {
-      "path": "content-pipeline/style-guide.md",
-      "name": "style-guide.md",
-      "dir": "content-pipeline",
-      "ext": ".md",
-      "sizeBytes": 2938,
-      "sizeKB": 2.87,
-      "estimatedTokens": 1033,
-      "lines": 70
     }
   ]
 }

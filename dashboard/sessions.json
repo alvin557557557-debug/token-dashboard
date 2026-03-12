@@ -142,58 +142,86 @@
     {
       "sessionId": "b3a80525-e2f5-4305-86b0-c4888f08abce",
       "path": "/home/node/.openclaw/agents/main/sessions/b3a80525-e2f5-4305-86b0-c4888f08abce.jsonl",
-      "sizeBytes": 20875,
+      "sizeBytes": 22093,
       "startedAt": "2026-03-12T08:32:38.811Z",
-      "lastTimestamp": "2026-03-12T08:32:59.173Z",
+      "lastTimestamp": "2026-03-12T08:33:14.289Z",
       "dominantModel": "gpt-5.4",
       "models": {
-        "gpt-5.4": 3
+        "gpt-5.4": 4
       },
-      "assistantTurns": 3,
+      "assistantTurns": 4,
       "usage": {
-        "input": 9663,
-        "output": 833,
-        "cacheRead": 28160,
+        "input": 9760,
+        "output": 853,
+        "cacheRead": 41856,
         "cacheWrite": 0,
-        "total": 38656,
-        "cost": 0.0436925,
-        "assistantTurns": 3
+        "total": 52469,
+        "cost": 0.047659,
+        "assistantTurns": 4
       },
       "firstUserSnippet": "[cron:fbf6d8a1-2858-459c-9484-313cca777a0a token-dashboard-sync-every-30m] In /home/node/.openclaw/workspace/token-dashboard-github, run ./scripts/sync-data-from-env.sh. If .sync.env is missing, invalid, or sync fails, report the error briefly. If sync succeeds, briefly report success with the current UTC time. Do not reveal or print the token value.\nCurrent time: Thursday, March 12th, 2026 — 8:32 AM (UTC) / 2026-03-12 08:32 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.",
       "kindGuess": "direct",
       "roleCounts": {
         "user": 1,
-        "assistant": 3,
-        "toolResult": 5
+        "assistant": 4,
+        "toolResult": 6
       }
     },
     {
       "sessionId": "bd6ac66f-95b7-4deb-b04d-f1b612bc78ad",
       "path": "/home/node/.openclaw/agents/main/sessions/bd6ac66f-95b7-4deb-b04d-f1b612bc78ad.jsonl",
-      "sizeBytes": 2151056,
+      "sizeBytes": 2437248,
       "startedAt": "2026-03-12T04:03:37.076Z",
-      "lastTimestamp": "2026-03-12T08:31:41.733Z",
+      "lastTimestamp": "2026-03-12T08:57:45.476Z",
       "dominantModel": "gpt-5.4",
       "models": {
-        "gpt-5.4": 143,
-        "delivery-mirror": 3
+        "gpt-5.4": 180,
+        "delivery-mirror": 4
       },
-      "assistantTurns": 146,
+      "assistantTurns": 184,
       "usage": {
-        "input": 2002579,
-        "output": 62674,
-        "cacheRead": 8786304,
+        "input": 3200768,
+        "output": 78981,
+        "cacheRead": 13810560,
         "cacheWrite": 0,
-        "total": 10851557,
-        "cost": 8.1431335,
-        "assistantTurns": 146
+        "total": 17090309,
+        "cost": 12.639274999999996,
+        "assistantTurns": 184
       },
       "firstUserSnippet": "System: [2026-03-12 04:03:36 UTC] Reminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nA scheduled reminder has been triggered. The reminder content is:\n\nReminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nPlease relay this reminder to the user in a helpful and friendly way.\nCurre",
       "kindGuess": "direct",
       "roleCounts": {
-        "user": 71,
-        "assistant": 146,
-        "toolResult": 108
+        "user": 83,
+        "assistant": 184,
+        "toolResult": 154
+      }
+    },
+    {
+      "sessionId": "f6c21d72-a7dc-4c36-822f-9bf57e90ee98",
+      "path": "/home/node/.openclaw/agents/main/sessions/f6c21d72-a7dc-4c36-822f-9bf57e90ee98.jsonl",
+      "sizeBytes": 16427,
+      "startedAt": "2026-03-12T09:02:38.868Z",
+      "lastTimestamp": "2026-03-12T09:03:06.959Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 2
+      },
+      "assistantTurns": 2,
+      "usage": {
+        "input": 9685,
+        "output": 381,
+        "cacheRead": 14848,
+        "cacheWrite": 0,
+        "total": 24914,
+        "cost": 0.0336395,
+        "assistantTurns": 2
+      },
+      "firstUserSnippet": "[cron:fbf6d8a1-2858-459c-9484-313cca777a0a token-dashboard-sync-every-30m] In /home/node/.openclaw/workspace/token-dashboard-github, run ./scripts/sync-data-from-env.sh. If .sync.env is missing, invalid, or sync fails, report the error briefly. If sync succeeds, briefly report success with the current UTC time. Do not reveal or print the token value.\nCurrent time: Thursday, March 12th, 2026 — 9:02 AM (UTC) / 2026-03-12 09:02 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 1,
+        "assistant": 2,
+        "toolResult": 5
       }
     }
   ]
