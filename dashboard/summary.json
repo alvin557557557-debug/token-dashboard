@@ -1,12 +1,31 @@
 {
-  "generatedAtUtc": "2026-03-12T14:32:43Z",
+  "generatedAtUtc": "2026-03-12T15:02:46Z",
   "counts": {
-    "files": 5646,
-    "sessions": 19,
+    "files": 7710,
+    "sessions": 21,
     "cronRunsDetected": 1,
-    "startupTurnsDetected": 0
+    "startupTurnsDetected": 1
   },
-  "startupBaseline": null,
+  "startupBaseline": {
+    "sessionId": "12647903-6541-4e9e-9ccb-dfc879a0f996",
+    "startedAt": "2026-03-12T14:59:18.646Z",
+    "model": "gpt-5.4",
+    "usage": {
+      "input": 10006,
+      "output": 236,
+      "cacheRead": 3584,
+      "cacheWrite": 0,
+      "totalTokens": 13826,
+      "cost": {
+        "input": 0.025015000000000003,
+        "output": 0.00354,
+        "cacheRead": 0.000896,
+        "cacheWrite": 0,
+        "total": 0.029451000000000005
+      }
+    },
+    "transcript": "/home/node/.openclaw/agents/main/sessions/12647903-6541-4e9e-9ccb-dfc879a0f996.jsonl"
+  },
   "recommendations": [
     {
       "priority": "high",
@@ -16,6 +35,19 @@
         "tmp-transcript/meta.json"
       ],
       "projectedSavingsTokens": "3k–15k / relevant load"
+    },
+    {
+      "priority": "high",
+      "title": "壓低 startup 固定成本",
+      "detail": "目前新 session baseline input 約 10006 tokens。精簡必讀內容與最近記憶可望把啟動成本壓到 3k–5k 區間。",
+      "targets": [
+        "AGENTS.md",
+        "SOUL.md",
+        "USER.md",
+        "MEMORY.md",
+        "memory/2026-03-10.md"
+      ],
+      "projectedSavingsTokens": "1.5k–3k / new session"
     },
     {
       "priority": "medium",
@@ -70,6 +102,46 @@
       "lines": 6121
     },
     {
+      "path": "whisper.cpp/build/CMakeFiles/CMakeConfigureLog.yaml",
+      "name": "CMakeConfigureLog.yaml",
+      "dir": "whisper.cpp/build/CMakeFiles",
+      "ext": ".yaml",
+      "sizeBytes": 178351,
+      "sizeKB": 174.17,
+      "estimatedTokens": 81069,
+      "lines": 3176
+    },
+    {
+      "path": "whisper.cpp/tests/earnings21/normalizers/english.json",
+      "name": "english.json",
+      "dir": "whisper.cpp/tests/earnings21/normalizers",
+      "ext": ".json",
+      "sizeBytes": 56128,
+      "sizeKB": 54.81,
+      "estimatedTokens": 25513,
+      "lines": 1741
+    },
+    {
+      "path": "whisper.cpp/tests/librispeech/normalizers/english.json",
+      "name": "english.json",
+      "dir": "whisper.cpp/tests/librispeech/normalizers",
+      "ext": ".json",
+      "sizeBytes": 56128,
+      "sizeKB": 54.81,
+      "estimatedTokens": 25513,
+      "lines": 1741
+    },
+    {
+      "path": "whisper.cpp/.github/workflows/build.yml",
+      "name": "build.yml",
+      "dir": "whisper.cpp/.github/workflows",
+      "ext": ".yml",
+      "sizeBytes": 53115,
+      "sizeKB": 51.87,
+      "estimatedTokens": 24144,
+      "lines": 1560
+    },
+    {
       "path": "content-pipeline/.venv/lib/python3.11/site-packages/numpy-2.4.3.dist-info/licenses/LICENSE.txt",
       "name": "LICENSE.txt",
       "dir": "content-pipeline/.venv/lib/python3.11/site-packages/numpy-2.4.3.dist-info/licenses",
@@ -90,6 +162,86 @@
       "lines": 1342
     },
     {
+      "path": "whisper.cpp/README.md",
+      "name": "README.md",
+      "dir": "whisper.cpp",
+      "ext": ".md",
+      "sizeBytes": 36005,
+      "sizeKB": 35.16,
+      "estimatedTokens": 16366,
+      "lines": 862
+    },
+    {
+      "path": "plugins/memory-lancedb-pro/README.md",
+      "name": "README.md",
+      "dir": "plugins/memory-lancedb-pro",
+      "ext": ".md",
+      "sizeBytes": 36186,
+      "sizeKB": 35.34,
+      "estimatedTokens": 15934,
+      "lines": 971
+    },
+    {
+      "path": "whisper.cpp/build/CMakeCache.txt",
+      "name": "CMakeCache.txt",
+      "dir": "whisper.cpp/build",
+      "ext": ".txt",
+      "sizeBytes": 33109,
+      "sizeKB": 32.33,
+      "estimatedTokens": 15050,
+      "lines": 1055
+    },
+    {
+      "path": "whisper.cpp/ggml/src/ggml-cpu/CMakeLists.txt",
+      "name": "CMakeLists.txt",
+      "dir": "whisper.cpp/ggml/src/ggml-cpu",
+      "ext": ".txt",
+      "sizeBytes": 32838,
+      "sizeKB": 32.07,
+      "estimatedTokens": 14927,
+      "lines": 691
+    },
+    {
+      "path": "whisper.cpp/build/compile_commands.json",
+      "name": "compile_commands.json",
+      "dir": "whisper.cpp/build",
+      "ext": ".json",
+      "sizeBytes": 31996,
+      "sizeKB": 31.25,
+      "estimatedTokens": 14544,
+      "lines": 230
+    },
+    {
+      "path": "plugins/memory-lancedb-pro/openclaw.plugin.json",
+      "name": "openclaw.plugin.json",
+      "dir": "plugins/memory-lancedb-pro",
+      "ext": ".json",
+      "sizeBytes": 28570,
+      "sizeKB": 27.9,
+      "estimatedTokens": 12986,
+      "lines": 815
+    },
+    {
+      "path": "plugins/memory-lancedb-pro/README_CN.md",
+      "name": "README_CN.md",
+      "dir": "plugins/memory-lancedb-pro",
+      "ext": ".md",
+      "sizeBytes": 35128,
+      "sizeKB": 34.3,
+      "estimatedTokens": 12615,
+      "lines": 969
+    },
+    {
+      "path": "whisper.cpp/scripts/bench-all-gg.txt",
+      "name": "bench-all-gg.txt",
+      "dir": "whisper.cpp/scripts",
+      "ext": ".txt",
+      "sizeBytes": 27327,
+      "sizeKB": 26.69,
+      "estimatedTokens": 12422,
+      "lines": 374
+    },
+    {
       "path": "content-pipeline/drafts/788ff1ea-2513-4be6-8100-e57a4baf9bc3.yaml",
       "name": "788ff1ea-2513-4be6-8100-e57a4baf9bc3.yaml",
       "dir": "content-pipeline/drafts",
@@ -100,6 +252,16 @@
       "lines": 27
     },
     {
+      "path": "whisper.cpp/ggml/CMakeLists.txt",
+      "name": "CMakeLists.txt",
+      "dir": "whisper.cpp/ggml",
+      "ext": ".txt",
+      "sizeBytes": 20872,
+      "sizeKB": 20.38,
+      "estimatedTokens": 9488,
+      "lines": 494
+    },
+    {
       "path": "content-pipeline/transcripts/788ff1ea-2513-4be6-8100-e57a4baf9bc3.txt",
       "name": "788ff1ea-2513-4be6-8100-e57a4baf9bc3.txt",
       "dir": "content-pipeline/transcripts",
@@ -108,136 +270,6 @@
       "sizeKB": 58.4,
       "estimatedTokens": 9422,
       "lines": 13
-    },
-    {
-      "path": "content-pipeline/.venv/lib/python3.11/site-packages/setuptools/config/setuptools.schema.json",
-      "name": "setuptools.schema.json",
-      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/setuptools/config",
-      "ext": ".json",
-      "sizeBytes": 16047,
-      "sizeKB": 15.67,
-      "estimatedTokens": 7295,
-      "lines": 433
-    },
-    {
-      "path": "AGENTS.md",
-      "name": "AGENTS.md",
-      "dir": ".",
-      "ext": ".md",
-      "sizeBytes": 8462,
-      "sizeKB": 8.26,
-      "estimatedTokens": 3810,
-      "lines": 225
-    },
-    {
-      "path": "token-dashboard-auto/app/dashboard/files.json",
-      "name": "files.json",
-      "dir": "token-dashboard-auto/app/dashboard",
-      "ext": ".json",
-      "sizeBytes": 7763,
-      "sizeKB": 7.58,
-      "estimatedTokens": 3529,
-      "lines": 320
-    },
-    {
-      "path": "token-dashboard-deploy/dashboard/files.json",
-      "name": "files.json",
-      "dir": "token-dashboard-deploy/dashboard",
-      "ext": ".json",
-      "sizeBytes": 7763,
-      "sizeKB": 7.58,
-      "estimatedTokens": 3529,
-      "lines": 320
-    },
-    {
-      "path": "content-pipeline/audio-transcription-workflow.md",
-      "name": "audio-transcription-workflow.md",
-      "dir": "content-pipeline",
-      "ext": ".md",
-      "sizeBytes": 7763,
-      "sizeKB": 7.58,
-      "estimatedTokens": 3495,
-      "lines": 365
-    },
-    {
-      "path": "archives/session-summaries/2026-03-10-read-soul-md.md",
-      "name": "2026-03-10-read-soul-md.md",
-      "dir": "archives/session-summaries",
-      "ext": ".md",
-      "sizeBytes": 9843,
-      "sizeKB": 9.61,
-      "estimatedTokens": 3179,
-      "lines": 333
-    },
-    {
-      "path": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates/modelcard_template.md",
-      "name": "modelcard_template.md",
-      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates",
-      "ext": ".md",
-      "sizeBytes": 6870,
-      "sizeKB": 6.71,
-      "estimatedTokens": 3123,
-      "lines": 200
-    },
-    {
-      "path": "content-pipeline/drafts/openclaw-multi-agents-guide.yaml",
-      "name": "openclaw-multi-agents-guide.yaml",
-      "dir": "content-pipeline/drafts",
-      "ext": ".yaml",
-      "sizeBytes": 13823,
-      "sizeKB": 13.5,
-      "estimatedTokens": 2589,
-      "lines": 27
-    },
-    {
-      "path": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates/datasetcard_template.md",
-      "name": "datasetcard_template.md",
-      "dir": "content-pipeline/.venv/lib/python3.11/site-packages/huggingface_hub/templates",
-      "ext": ".md",
-      "sizeBytes": 5503,
-      "sizeKB": 5.37,
-      "estimatedTokens": 2502,
-      "lines": 143
-    },
-    {
-      "path": "token-dashboard-auto/app/dashboard/summary.json",
-      "name": "summary.json",
-      "dir": "token-dashboard-auto/app/dashboard",
-      "ext": ".json",
-      "sizeBytes": 5238,
-      "sizeKB": 5.12,
-      "estimatedTokens": 2234,
-      "lines": 205
-    },
-    {
-      "path": "token-dashboard-deploy/dashboard/summary.json",
-      "name": "summary.json",
-      "dir": "token-dashboard-deploy/dashboard",
-      "ext": ".json",
-      "sizeBytes": 5238,
-      "sizeKB": 5.12,
-      "estimatedTokens": 2234,
-      "lines": 205
-    },
-    {
-      "path": "automation/codex-result.md",
-      "name": "codex-result.md",
-      "dir": "automation",
-      "ext": ".md",
-      "sizeBytes": 5027,
-      "sizeKB": 4.91,
-      "estimatedTokens": 2160,
-      "lines": 94
-    },
-    {
-      "path": "content-pipeline/STATUS.md",
-      "name": "STATUS.md",
-      "dir": "content-pipeline",
-      "ext": ".md",
-      "sizeBytes": 4640,
-      "sizeKB": 4.53,
-      "estimatedTokens": 2106,
-      "lines": 206
     }
   ]
 }

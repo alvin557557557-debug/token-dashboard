@@ -1,39 +1,60 @@
 {
-  "startupTurns": [],
+  "startupTurns": [
+    {
+      "sessionId": "12647903-6541-4e9e-9ccb-dfc879a0f996",
+      "startedAt": "2026-03-12T14:59:18.646Z",
+      "model": "gpt-5.4",
+      "usage": {
+        "input": 10006,
+        "output": 236,
+        "cacheRead": 3584,
+        "cacheWrite": 0,
+        "totalTokens": 13826,
+        "cost": {
+          "input": 0.025015000000000003,
+          "output": 0.00354,
+          "cacheRead": 0.000896,
+          "cacheWrite": 0,
+          "total": 0.029451000000000005
+        }
+      },
+      "transcript": "/home/node/.openclaw/agents/main/sessions/12647903-6541-4e9e-9ccb-dfc879a0f996.jsonl"
+    }
+  ],
   "startupFiles": [
     {
       "path": "AGENTS.md",
       "sizeBytes": 8462,
       "estimatedTokens": 3810,
-      "estimatedStartupInputShare": null,
+      "estimatedStartupInputShare": 7263,
       "sharePct": 72.6
     },
     {
       "path": "SOUL.md",
       "sizeBytes": 3151,
       "estimatedTokens": 592,
-      "estimatedStartupInputShare": null,
+      "estimatedStartupInputShare": 1129,
       "sharePct": 11.3
     },
     {
       "path": "USER.md",
       "sizeBytes": 477,
       "estimatedTokens": 216,
-      "estimatedStartupInputShare": null,
+      "estimatedStartupInputShare": 412,
       "sharePct": 4.1
     },
     {
       "path": "MEMORY.md",
       "sizeBytes": 952,
       "estimatedTokens": 433,
-      "estimatedStartupInputShare": null,
+      "estimatedStartupInputShare": 825,
       "sharePct": 8.2
     },
     {
       "path": "memory/2026-03-10.md",
       "sizeBytes": 434,
       "estimatedTokens": 198,
-      "estimatedStartupInputShare": null,
+      "estimatedStartupInputShare": 377,
       "sharePct": 3.8
     }
   ]
