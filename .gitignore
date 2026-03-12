@@ -7,6 +7,9 @@
 .env
 .env.*
 !.env.example
+.sync.env
+.sync.env.*
+!.sync.env.example
 
 # Build / temp
 .tmp/
