@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T09:32:44Z",
+  "generatedAtUtc": "2026-03-12T10:02:54Z",
   "counts": {
-    "files": 5626,
-    "sessions": 9,
+    "files": 5639,
+    "sessions": 10,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -88,6 +88,26 @@
       "sizeKB": 56.48,
       "estimatedTokens": 21016,
       "lines": 1342
+    },
+    {
+      "path": "content-pipeline/drafts/788ff1ea-2513-4be6-8100-e57a4baf9bc3.yaml",
+      "name": "788ff1ea-2513-4be6-8100-e57a4baf9bc3.yaml",
+      "dir": "content-pipeline/drafts",
+      "ext": ".yaml",
+      "sizeBytes": 63034,
+      "sizeKB": 61.56,
+      "estimatedTokens": 10064,
+      "lines": 27
+    },
+    {
+      "path": "content-pipeline/transcripts/788ff1ea-2513-4be6-8100-e57a4baf9bc3.txt",
+      "name": "788ff1ea-2513-4be6-8100-e57a4baf9bc3.txt",
+      "dir": "content-pipeline/transcripts",
+      "ext": ".txt",
+      "sizeBytes": 59799,
+      "sizeKB": 58.4,
+      "estimatedTokens": 9422,
+      "lines": 13
     },
     {
       "path": "content-pipeline/.venv/lib/python3.11/site-packages/setuptools/config/setuptools.schema.json",
@@ -218,26 +238,6 @@
       "sizeKB": 10.58,
       "estimatedTokens": 2060,
       "lines": 355
-    },
-    {
-      "path": "content-pipeline/prompts/article-generation.md",
-      "name": "article-generation.md",
-      "dir": "content-pipeline/prompts",
-      "ext": ".md",
-      "sizeBytes": 4447,
-      "sizeKB": 4.34,
-      "estimatedTokens": 2014,
-      "lines": 182
-    },
-    {
-      "path": "token-dashboard-auto/app/dashboard/sessions.json",
-      "name": "sessions.json",
-      "dir": "token-dashboard-auto/app/dashboard",
-      "ext": ".json",
-      "sizeBytes": 4137,
-      "sizeKB": 4.04,
-      "estimatedTokens": 1765,
-      "lines": 89
     }
   ]
 }
