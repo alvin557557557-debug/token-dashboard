@@ -6,8 +6,8 @@
   <title>OpenClaw Token Dashboard</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 0; background: #0b1020; color: #e7ecff; }
-    header { padding: 20px 24px; border-bottom: 1px solid #24304f; position: sticky; top: 0; background: #0b1020; }
-    main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+    header { padding: 20px 24px; border-bottom: 1px solid #24304f; position: sticky; top: 0; background: #0b1020; z-index: 5; }
+    main { padding: 24px; max-width: 1200px; margin: 0 auto; }
     .muted { color: #9fb0d9; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
     .card { background: #121933; border: 1px solid #24304f; border-radius: 14px; padding: 16px; }
@@ -20,12 +20,22 @@
     .warn { color: #ffd166; }
     .err { color: #ff7b7b; }
     code { background: #0f1530; padding: 2px 6px; border-radius: 6px; }
+    .chart-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-top: 16px; }
+    .chart-wrap { position: relative; width: 100%; min-height: 320px; }
+    canvas { width: 100%; height: 320px; display: block; }
+    .legend { display: flex; flex-wrap: wrap; gap: 10px 14px; margin-top: 12px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #c7d4f7; }
+    .legend-swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+    .empty { color: #9fb0d9; padding: 24px 0; }
+    @media (max-width: 900px) {
+      .chart-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>OpenClaw Token Dashboard</h1>
-    <div class="muted">GitHub 完整版骨架 · 前端從 data branch 讀取最新 JSON</div>
+    <div class="muted">GitHub data branch 儀表板 · 含使用量折線圖與消耗占比圓餅圖</div>
   </header>
   <main>
     <div class="grid">
@@ -34,6 +44,24 @@
       <section class="card"><h3>檔案數</h3><div id="filesCount" class="big">--</div></section>
       <section class="card"><h3>Sessions</h3><div id="sessionsCount" class="big">--</div></section>
     </div>
+
+    <section class="chart-grid">
+      <section class="card">
+        <h2>使用量折線圖（近幾日 total tokens）</h2>
+        <div class="chart-wrap">
+          <canvas id="usageLineChart" width="800" height="320"></canvas>
+        </div>
+        <div class="muted" id="usageLineHint">載入中...</div>
+      </section>
+
+      <section class="card">
+        <h2>消耗占比圓餅圖（模型總 tokens）</h2>
+        <div class="chart-wrap">
+          <canvas id="usagePieChart" width="420" height="320"></canvas>
+        </div>
+        <div id="usagePieLegend" class="legend"></div>
+      </section>
+    </section>
 
     <section class="card" style="margin-top:16px;">
       <h2>Recommendations</h2>
@@ -61,6 +89,8 @@
       branch: 'data'
     };
 
+    const CHART_COLORS = ['#7aa2ff', '#67e8f9', '#8ef0a7', '#ffd166', '#ff9f6e', '#ff7b7b', '#c4b5fd', '#f9a8d4'];
+
     const qs = new URLSearchParams(location.search);
     const CONFIG = {
       owner: qs.get('owner') || window.DASHBOARD_OWNER || DEFAULT_CONFIG.owner,
@@ -77,6 +107,142 @@
     }
 
     function fmt(v) { return (v ?? '--').toLocaleString?.() ?? String(v); }
+    function money(v) { return `$${Number(v || 0).toFixed(4)}`; }
+
+    function sumDay(dayObj) {
+      return Object.values(dayObj || {}).reduce((acc, model) => acc + (model.total || 0), 0);
+    }
+
+    function aggregateModelTotals(days) {
+      const totals = {};
+      Object.values(days || {}).forEach(day => {
+        Object.entries(day || {}).forEach(([model, usage]) => {
+          totals[model] = (totals[model] || 0) + (usage.total || 0);
+        });
+      });
+      return totals;
+    }
+
+    function clearCanvas(canvas) {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      return ctx;
+    }
+
+    function drawEmpty(canvas, text) {
+      const ctx = clearCanvas(canvas);
+      ctx.fillStyle = '#9fb0d9';
+      ctx.font = '16px system-ui';
+      ctx.textAlign = 'center';
+      ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+    }
+
+    function drawLineChart(canvas, labels, values) {
+      if (!labels.length || !values.length) return drawEmpty(canvas, '目前沒有足夠資料');
+      const ctx = clearCanvas(canvas);
+      const w = canvas.width, h = canvas.height;
+      const pad = { top: 24, right: 20, bottom: 42, left: 64 };
+      const chartW = w - pad.left - pad.right;
+      const chartH = h - pad.top - pad.bottom;
+      const max = Math.max(...values, 1);
+      const min = 0;
+      const steps = 4;
+
+      ctx.strokeStyle = '#24304f';
+      ctx.lineWidth = 1;
+      ctx.font = '12px system-ui';
+      ctx.fillStyle = '#9fb0d9';
+
+      for (let i = 0; i <= steps; i++) {
+        const y = pad.top + (chartH / steps) * i;
+        ctx.beginPath();
+        ctx.moveTo(pad.left, y);
+        ctx.lineTo(w - pad.right, y);
+        ctx.stroke();
+
+        const value = Math.round(max - ((max - min) / steps) * i);
+        ctx.fillText(fmt(value), 8, y + 4);
+      }
+
+      const points = values.map((value, index) => {
+        const x = pad.left + (labels.length === 1 ? chartW / 2 : (chartW / (labels.length - 1)) * index);
+        const y = pad.top + chartH - ((value - min) / (max - min || 1)) * chartH;
+        return { x, y, value, label: labels[index] };
+      });
+
+      ctx.strokeStyle = '#7aa2ff';
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      points.forEach((p, i) => {
+        if (i === 0) ctx.moveTo(p.x, p.y);
+        else ctx.lineTo(p.x, p.y);
+      });
+      ctx.stroke();
+
+      ctx.fillStyle = '#7aa2ff';
+      points.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      ctx.fillStyle = '#cfe0ff';
+      ctx.textAlign = 'center';
+      points.forEach((p, i) => {
+        ctx.fillText(labels[i], p.x, h - 14);
+      });
+
+      const peak = points.reduce((a, b) => (a.value > b.value ? a : b));
+      ctx.fillStyle = '#e7ecff';
+      ctx.textAlign = 'left';
+      ctx.fillText(`最高：${peak.label} · ${fmt(peak.value)} tokens`, pad.left, 16);
+    }
+
+    function drawPieChart(canvas, entries) {
+      if (!entries.length) return drawEmpty(canvas, '目前沒有足夠資料');
+      const ctx = clearCanvas(canvas);
+      const w = canvas.width, h = canvas.height;
+      const total = entries.reduce((acc, e) => acc + e.value, 0) || 1;
+      const cx = w / 2;
+      const cy = h / 2;
+      const radius = Math.min(w, h) * 0.32;
+      let start = -Math.PI / 2;
+
+      entries.forEach((entry, index) => {
+        const angle = (entry.value / total) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, radius, start, start + angle);
+        ctx.closePath();
+        ctx.fillStyle = CHART_COLORS[index % CHART_COLORS.length];
+        ctx.fill();
+        start += angle;
+      });
+
+      ctx.beginPath();
+      ctx.arc(cx, cy, radius * 0.52, 0, Math.PI * 2);
+      ctx.fillStyle = '#121933';
+      ctx.fill();
+
+      ctx.fillStyle = '#e7ecff';
+      ctx.textAlign = 'center';
+      ctx.font = 'bold 18px system-ui';
+      ctx.fillText('總消耗', cx, cy - 6);
+      ctx.font = '13px system-ui';
+      ctx.fillStyle = '#9fb0d9';
+      ctx.fillText(fmt(total), cx, cy + 16);
+    }
+
+    function renderPieLegend(entries) {
+      const total = entries.reduce((acc, e) => acc + e.value, 0) || 1;
+      const el = document.getElementById('usagePieLegend');
+      el.innerHTML = entries.length
+        ? entries.map((entry, i) => {
+            const pct = ((entry.value / total) * 100).toFixed(1);
+            return `<div class="legend-item"><span class="legend-swatch" style="background:${CHART_COLORS[i % CHART_COLORS.length]}"></span><span><code>${entry.label}</code> ${fmt(entry.value)} (${pct}%)</span></div>`;
+          }).join('')
+        : '<div class="empty">目前沒有資料</div>';
+    }
 
     async function boot() {
       const statusEl = document.getElementById('status');
@@ -86,7 +252,11 @@
         return;
       }
       try {
-        const summary = await getJson('summary.json');
+        const [summary, daily] = await Promise.all([
+          getJson('summary.json'),
+          getJson('daily_usage.json')
+        ]);
+
         document.getElementById('generatedAt').textContent = summary.generatedAtUtc || '--';
         document.getElementById('filesCount').textContent = fmt(summary.counts?.files);
         document.getElementById('sessionsCount').textContent = fmt(summary.counts?.sessions);
@@ -100,7 +270,24 @@
           .map(f => `<tr><td><code>${f.path}</code></td><td>${fmt(f.estimatedTokens)}</td><td>${fmt(f.sizeKB)}</td></tr>`)
           .join('');
         document.getElementById('topFiles').innerHTML = rows || '<tr><td colspan="3">No data</td></tr>';
-        statusEl.innerHTML = '<span class="ok">已成功載入 data branch JSON</span>';
+
+        const days = daily.days || {};
+        const labels = Object.keys(days).sort();
+        const values = labels.map(label => sumDay(days[label]));
+        drawLineChart(document.getElementById('usageLineChart'), labels, values);
+        document.getElementById('usageLineHint').textContent = labels.length
+          ? `統計範圍：${labels[0]} ～ ${labels[labels.length - 1]} · 依 daily_usage.json 聚合 total tokens`
+          : '目前沒有 daily_usage 資料';
+
+        const modelTotals = aggregateModelTotals(days);
+        const pieEntries = Object.entries(modelTotals)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 6)
+          .map(([label, value]) => ({ label, value }));
+        drawPieChart(document.getElementById('usagePieChart'), pieEntries);
+        renderPieLegend(pieEntries);
+
+        statusEl.innerHTML = `<span class="ok">已成功載入 data branch JSON</span> · 總模型成本 ${money(Object.values(days).flatMap(day => Object.values(day)).reduce((a, u) => a + (u.cost || 0), 0))}`;
       } catch (e) {
         statusEl.innerHTML = `<span class="err">載入失敗：</span> ${e.message}`;
       }
