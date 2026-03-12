@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T08:02:43Z",
+  "generatedAtUtc": "2026-03-12T08:32:59Z",
   "counts": {
-    "files": 96,
-    "sessions": 6,
+    "files": 102,
+    "sessions": 7,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -100,6 +100,16 @@
       "lines": 333
     },
     {
+      "path": "content-pipeline/drafts/openclaw-multi-agents-guide.yaml",
+      "name": "openclaw-multi-agents-guide.yaml",
+      "dir": "content-pipeline/drafts",
+      "ext": ".yaml",
+      "sizeBytes": 13823,
+      "sizeKB": 13.5,
+      "estimatedTokens": 2589,
+      "lines": 27
+    },
+    {
       "path": "token-dashboard-auto/app/dashboard/summary.json",
       "name": "summary.json",
       "dir": "token-dashboard-auto/app/dashboard",
@@ -128,6 +138,16 @@
       "sizeKB": 4.91,
       "estimatedTokens": 2160,
       "lines": 94
+    },
+    {
+      "path": "content-pipeline/transcripts/openclaw-multi-agents-guide.txt",
+      "name": "openclaw-multi-agents-guide.txt",
+      "dir": "content-pipeline/transcripts",
+      "ext": ".txt",
+      "sizeBytes": 10829,
+      "sizeKB": 10.58,
+      "estimatedTokens": 2060,
+      "lines": 355
     },
     {
       "path": "content-pipeline/prompts/article-generation.md",
@@ -218,26 +238,6 @@
       "sizeKB": 2.87,
       "estimatedTokens": 1033,
       "lines": 70
-    },
-    {
-      "path": "content-pipeline/published/example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
-      "name": "example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
-      "dir": "content-pipeline/published",
-      "ext": ".md",
-      "sizeBytes": 2473,
-      "sizeKB": 2.42,
-      "estimatedTokens": 847,
-      "lines": 49
-    },
-    {
-      "path": "content-pipeline/published/ai.md",
-      "name": "ai.md",
-      "dir": "content-pipeline/published",
-      "ext": ".md",
-      "sizeBytes": 2395,
-      "sizeKB": 2.34,
-      "estimatedTokens": 812,
-      "lines": 49
     }
   ]
 }

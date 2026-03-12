@@ -241,6 +241,16 @@
       "lines": 30
     },
     {
+      "path": "content-pipeline/drafts/openclaw-multi-agents-guide.yaml",
+      "name": "openclaw-multi-agents-guide.yaml",
+      "dir": "content-pipeline/drafts",
+      "ext": ".yaml",
+      "sizeBytes": 13823,
+      "sizeKB": 13.5,
+      "estimatedTokens": 2589,
+      "lines": 27
+    },
+    {
       "path": "content-pipeline/examples/example-item.yaml",
       "name": "example-item.yaml",
       "dir": "content-pipeline/examples",
@@ -281,12 +291,32 @@
       "lines": 13
     },
     {
+      "path": "content-pipeline/input/openclaw-multi-agents-guide.yaml",
+      "name": "openclaw-multi-agents-guide.yaml",
+      "dir": "content-pipeline/input",
+      "ext": ".yaml",
+      "sizeBytes": 554,
+      "sizeKB": 0.54,
+      "estimatedTokens": 248,
+      "lines": 13
+    },
+    {
       "path": "content-pipeline/logs/example-001.log",
       "name": "example-001.log",
       "dir": "content-pipeline/logs",
       "ext": ".log",
       "sizeBytes": 394,
       "sizeKB": 0.38,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "content-pipeline/logs/openclaw-multi-agents-guide.log",
+      "name": "openclaw-multi-agents-guide.log",
+      "dir": "content-pipeline/logs",
+      "ext": ".log",
+      "sizeBytes": 396,
+      "sizeKB": 0.39,
       "estimatedTokens": null,
       "lines": null
     },
@@ -298,6 +328,16 @@
       "sizeBytes": 926,
       "sizeKB": 0.9,
       "estimatedTokens": 395,
+      "lines": 22
+    },
+    {
+      "path": "content-pipeline/metadata/openclaw-multi-agents-guide.yaml",
+      "name": "openclaw-multi-agents-guide.yaml",
+      "dir": "content-pipeline/metadata",
+      "ext": ".yaml",
+      "sizeBytes": 1009,
+      "sizeKB": 0.99,
+      "estimatedTokens": 369,
       "lines": 22
     },
     {
@@ -371,12 +411,22 @@
       "lines": 49
     },
     {
+      "path": "content-pipeline/published/openclaw-multi-agents-guide-openclaw-agents.md",
+      "name": "openclaw-multi-agents-guide-openclaw-agents.md",
+      "dir": "content-pipeline/published",
+      "ext": ".md",
+      "sizeBytes": 3656,
+      "sizeKB": 3.57,
+      "estimatedTokens": 830,
+      "lines": 49
+    },
+    {
       "path": "content-pipeline/run-item.py",
       "name": "run-item.py",
       "dir": "content-pipeline",
       "ext": ".py",
-      "sizeBytes": 10544,
-      "sizeKB": 10.3,
+      "sizeBytes": 16109,
+      "sizeKB": 15.73,
       "estimatedTokens": null,
       "lines": null
     },
@@ -421,6 +471,16 @@
       "lines": 5
     },
     {
+      "path": "content-pipeline/transcripts/openclaw-multi-agents-guide.txt",
+      "name": "openclaw-multi-agents-guide.txt",
+      "dir": "content-pipeline/transcripts",
+      "ext": ".txt",
+      "sizeBytes": 10829,
+      "sizeKB": 10.58,
+      "estimatedTokens": 2060,
+      "lines": 355
+    },
+    {
       "path": "memory/2026-03-10.md",
       "name": "2026-03-10.md",
       "dir": "memory",
@@ -445,10 +505,10 @@
       "name": "2026-03-12.md",
       "dir": "memory",
       "ext": ".md",
-      "sizeBytes": 528,
-      "sizeKB": 0.52,
-      "estimatedTokens": 240,
-      "lines": 7
+      "sizeBytes": 1603,
+      "sizeKB": 1.57,
+      "estimatedTokens": 729,
+      "lines": 12
     },
     {
       "path": "progress.log",
@@ -1223,7 +1283,7 @@
             "name": "run-item.py",
             "path": "content-pipeline/run-item.py",
             "type": "file",
-            "sizeBytes": 10544,
+            "sizeBytes": 16109,
             "estimatedTokens": 0,
             "lines": null,
             "ext": ".py"
@@ -1260,6 +1320,15 @@
             "path": "content-pipeline/transcripts",
             "type": "dir",
             "children": {
+              "openclaw-multi-agents-guide.txt": {
+                "name": "openclaw-multi-agents-guide.txt",
+                "path": "content-pipeline/transcripts/openclaw-multi-agents-guide.txt",
+                "type": "file",
+                "sizeBytes": 10829,
+                "estimatedTokens": 2060,
+                "lines": 355,
+                "ext": ".txt"
+              },
               "example-001.txt": {
                 "name": "example-001.txt",
                 "path": "content-pipeline/transcripts/example-001.txt",
@@ -1270,9 +1339,9 @@
                 "ext": ".txt"
               }
             },
-            "sizeBytes": 738,
-            "estimatedTokens": 334,
-            "files": 1
+            "sizeBytes": 11567,
+            "estimatedTokens": 2394,
+            "files": 2
           },
           "prompts": {
             "name": "prompts",
@@ -1324,11 +1393,20 @@
                 "estimatedTokens": 229,
                 "lines": 13,
                 "ext": ".yaml"
+              },
+              "openclaw-multi-agents-guide.yaml": {
+                "name": "openclaw-multi-agents-guide.yaml",
+                "path": "content-pipeline/input/openclaw-multi-agents-guide.yaml",
+                "type": "file",
+                "sizeBytes": 554,
+                "estimatedTokens": 248,
+                "lines": 13,
+                "ext": ".yaml"
               }
             },
-            "sizeBytes": 503,
-            "estimatedTokens": 229,
-            "files": 1
+            "sizeBytes": 1057,
+            "estimatedTokens": 477,
+            "files": 2
           },
           "examples": {
             "name": "examples",
@@ -1371,11 +1449,20 @@
                 "estimatedTokens": 779,
                 "lines": 30,
                 "ext": ".yaml"
+              },
+              "openclaw-multi-agents-guide.yaml": {
+                "name": "openclaw-multi-agents-guide.yaml",
+                "path": "content-pipeline/drafts/openclaw-multi-agents-guide.yaml",
+                "type": "file",
+                "sizeBytes": 13823,
+                "estimatedTokens": 2589,
+                "lines": 27,
+                "ext": ".yaml"
               }
             },
-            "sizeBytes": 2308,
-            "estimatedTokens": 779,
-            "files": 1
+            "sizeBytes": 16131,
+            "estimatedTokens": 3368,
+            "files": 2
           },
           "metadata": {
             "name": "metadata",
@@ -1390,17 +1477,35 @@
                 "estimatedTokens": 395,
                 "lines": 22,
                 "ext": ".yaml"
+              },
+              "openclaw-multi-agents-guide.yaml": {
+                "name": "openclaw-multi-agents-guide.yaml",
+                "path": "content-pipeline/metadata/openclaw-multi-agents-guide.yaml",
+                "type": "file",
+                "sizeBytes": 1009,
+                "estimatedTokens": 369,
+                "lines": 22,
+                "ext": ".yaml"
               }
             },
-            "sizeBytes": 926,
-            "estimatedTokens": 395,
-            "files": 1
+            "sizeBytes": 1935,
+            "estimatedTokens": 764,
+            "files": 2
           },
           "published": {
             "name": "published",
             "path": "content-pipeline/published",
             "type": "dir",
             "children": {
+              "openclaw-multi-agents-guide-openclaw-agents.md": {
+                "name": "openclaw-multi-agents-guide-openclaw-agents.md",
+                "path": "content-pipeline/published/openclaw-multi-agents-guide-openclaw-agents.md",
+                "type": "file",
+                "sizeBytes": 3656,
+                "estimatedTokens": 830,
+                "lines": 49,
+                "ext": ".md"
+              },
               "ai.md": {
                 "name": "ai.md",
                 "path": "content-pipeline/published/ai.md",
@@ -1429,9 +1534,9 @@
                 "ext": ".md"
               }
             },
-            "sizeBytes": 8574,
-            "estimatedTokens": 2462,
-            "files": 3
+            "sizeBytes": 12230,
+            "estimatedTokens": 3292,
+            "files": 4
           },
           "logs": {
             "name": "logs",
@@ -1446,16 +1551,25 @@
                 "estimatedTokens": 0,
                 "lines": null,
                 "ext": ".log"
+              },
+              "openclaw-multi-agents-guide.log": {
+                "name": "openclaw-multi-agents-guide.log",
+                "path": "content-pipeline/logs/openclaw-multi-agents-guide.log",
+                "type": "file",
+                "sizeBytes": 396,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".log"
               }
             },
-            "sizeBytes": 394,
+            "sizeBytes": 790,
             "estimatedTokens": 0,
-            "files": 1
+            "files": 2
           }
         },
-        "sizeBytes": 46501,
-        "estimatedTokens": 14051,
-        "files": 21
+        "sizeBytes": 82333,
+        "estimatedTokens": 20147,
+        "files": 27
       },
       "token-dashboard-github": {
         "name": "token-dashboard-github",
@@ -1787,14 +1901,14 @@
             "name": "2026-03-12.md",
             "path": "memory/2026-03-12.md",
             "type": "file",
-            "sizeBytes": 528,
-            "estimatedTokens": 240,
-            "lines": 7,
+            "sizeBytes": 1603,
+            "estimatedTokens": 729,
+            "lines": 12,
             "ext": ".md"
           }
         },
-        "sizeBytes": 2045,
-        "estimatedTokens": 930,
+        "sizeBytes": 3120,
+        "estimatedTokens": 1419,
         "files": 3
       },
       "tmp-transcript": {
@@ -2151,8 +2265,8 @@
         "files": 1
       }
     },
-    "sizeBytes": 797546,
-    "estimatedTokens": 264656,
-    "files": 96
+    "sizeBytes": 834453,
+    "estimatedTokens": 271241,
+    "files": 102
   }
 }
