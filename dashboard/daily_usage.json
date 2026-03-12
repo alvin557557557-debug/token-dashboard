@@ -8,16 +8,16 @@
         "cacheWrite": 0,
         "total": 0,
         "cost": 0.0,
-        "turns": 2
+        "turns": 3
       },
       "gpt-5.4": {
-        "input": 565160,
-        "output": 16601,
-        "cacheRead": 1828736,
+        "input": 1236200,
+        "output": 24953,
+        "cacheRead": 5384064,
         "cacheWrite": 0,
-        "total": 2410497,
-        "cost": 2.1190990000000007,
-        "turns": 100
+        "total": 6645217,
+        "cost": 4.810810999999999,
+        "turns": 162
       }
     }
   }

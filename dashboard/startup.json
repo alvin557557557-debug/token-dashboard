@@ -24,38 +24,38 @@
   "startupFiles": [
     {
       "path": "AGENTS.md",
-      "sizeBytes": 8462,
-      "estimatedTokens": 3810,
-      "estimatedStartupInputShare": 7263,
-      "sharePct": 72.6
+      "sizeBytes": 8992,
+      "estimatedTokens": 4051,
+      "estimatedStartupInputShare": 7383,
+      "sharePct": 73.8
     },
     {
       "path": "SOUL.md",
       "sizeBytes": 3151,
       "estimatedTokens": 592,
-      "estimatedStartupInputShare": 1129,
-      "sharePct": 11.3
+      "estimatedStartupInputShare": 1079,
+      "sharePct": 10.8
     },
     {
       "path": "USER.md",
       "sizeBytes": 477,
       "estimatedTokens": 216,
-      "estimatedStartupInputShare": 412,
-      "sharePct": 4.1
+      "estimatedStartupInputShare": 394,
+      "sharePct": 3.9
     },
     {
       "path": "MEMORY.md",
       "sizeBytes": 952,
       "estimatedTokens": 433,
-      "estimatedStartupInputShare": 825,
-      "sharePct": 8.2
+      "estimatedStartupInputShare": 789,
+      "sharePct": 7.9
     },
     {
       "path": "memory/2026-03-10.md",
       "sizeBytes": 434,
       "estimatedTokens": 198,
-      "estimatedStartupInputShare": 377,
-      "sharePct": 3.8
+      "estimatedStartupInputShare": 361,
+      "sharePct": 3.6
     }
   ]
 }
