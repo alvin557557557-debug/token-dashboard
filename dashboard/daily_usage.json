@@ -11,13 +11,13 @@
         "turns": 3
       },
       "gpt-5.4": {
-        "input": 1835299,
-        "output": 28563,
-        "cacheRead": 5659520,
+        "input": 1934876,
+        "output": 29403,
+        "cacheRead": 5703296,
         "cacheWrite": 0,
-        "total": 7523382,
-        "cost": 6.431572499999999,
-        "turns": 185
+        "total": 7667575,
+        "cost": 6.704058999999998,
+        "turns": 190
       }
     }
   }
