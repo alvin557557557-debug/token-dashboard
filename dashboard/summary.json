@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T10:02:54Z",
+  "generatedAtUtc": "2026-03-12T10:32:58Z",
   "counts": {
     "files": 5639,
-    "sessions": 10,
+    "sessions": 11,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -124,10 +124,10 @@
       "name": "AGENTS.md",
       "dir": ".",
       "ext": ".md",
-      "sizeBytes": 7869,
-      "sizeKB": 7.68,
-      "estimatedTokens": 3541,
-      "lines": 212
+      "sizeBytes": 8462,
+      "sizeKB": 8.26,
+      "estimatedTokens": 3810,
+      "lines": 225
     },
     {
       "path": "token-dashboard-auto/app/dashboard/files.json",

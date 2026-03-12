@@ -2,13 +2,13 @@
   "days": {
     "2026-03-12": {
       "gpt-5.4": {
-        "input": 5330265,
-        "output": 99348,
-        "cacheRead": 17593728,
+        "input": 5976898,
+        "output": 101888,
+        "cacheRead": 17782784,
         "cacheWrite": 0,
-        "total": 23023341,
-        "cost": 19.214314499999993,
-        "turns": 260
+        "total": 23861570,
+        "cost": 20.916261,
+        "turns": 272
       },
       "delivery-mirror": {
         "input": 0,
