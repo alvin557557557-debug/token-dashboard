@@ -1,12 +1,1727 @@
 {
-  "files": [],
+  "files": [
+    {
+      "path": ".clawhub/lock.json",
+      "name": "lock.json",
+      "dir": ".clawhub",
+      "ext": ".json",
+      "sizeBytes": 140,
+      "sizeKB": 0.14,
+      "estimatedTokens": 64,
+      "lines": 9
+    },
+    {
+      "path": ".openclaw/workspace-state.json",
+      "name": "workspace-state.json",
+      "dir": ".openclaw",
+      "ext": ".json",
+      "sizeBytes": 74,
+      "sizeKB": 0.07,
+      "estimatedTokens": 34,
+      "lines": 4
+    },
+    {
+      "path": "AGENTS.md",
+      "name": "AGENTS.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 7869,
+      "sizeKB": 7.68,
+      "estimatedTokens": 3541,
+      "lines": 212
+    },
+    {
+      "path": "HEARTBEAT.md",
+      "name": "HEARTBEAT.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 396,
+      "sizeKB": 0.39,
+      "estimatedTokens": 180,
+      "lines": 9
+    },
+    {
+      "path": "IDENTITY.md",
+      "name": "IDENTITY.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 1268,
+      "sizeKB": 1.24,
+      "estimatedTokens": 260,
+      "lines": 39
+    },
+    {
+      "path": "MEMORY.md",
+      "name": "MEMORY.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 952,
+      "sizeKB": 0.93,
+      "estimatedTokens": 433,
+      "lines": 9
+    },
+    {
+      "path": "SOUL.md",
+      "name": "SOUL.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 3151,
+      "sizeKB": 3.08,
+      "estimatedTokens": 592,
+      "lines": 105
+    },
+    {
+      "path": "TOOLS.md",
+      "name": "TOOLS.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 860,
+      "sizeKB": 0.84,
+      "estimatedTokens": 387,
+      "lines": 40
+    },
+    {
+      "path": "USER.md",
+      "name": "USER.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 477,
+      "sizeKB": 0.47,
+      "estimatedTokens": 216,
+      "lines": 17
+    },
+    {
+      "path": "archives/session-summaries/2026-03-10-read-soul-md.md",
+      "name": "2026-03-10-read-soul-md.md",
+      "dir": "archives/session-summaries",
+      "ext": ".md",
+      "sizeBytes": 9843,
+      "sizeKB": 9.61,
+      "estimatedTokens": 3179,
+      "lines": 333
+    },
+    {
+      "path": "archives/session-summaries/2026-03-10-tools-profile.md",
+      "name": "2026-03-10-tools-profile.md",
+      "dir": "archives/session-summaries",
+      "ext": ".md",
+      "sizeBytes": 57838,
+      "sizeKB": 56.48,
+      "estimatedTokens": 21016,
+      "lines": 1342
+    },
+    {
+      "path": "archives/session-summaries/README.md",
+      "name": "README.md",
+      "dir": "archives/session-summaries",
+      "ext": ".md",
+      "sizeBytes": 488,
+      "sizeKB": 0.48,
+      "estimatedTokens": 222,
+      "lines": 10
+    },
+    {
+      "path": "automation/.webdesk-vnc-passwd",
+      "name": ".webdesk-vnc-passwd",
+      "dir": "automation",
+      "ext": "",
+      "sizeBytes": 8,
+      "sizeKB": 0.01,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "automation/README.md",
+      "name": "README.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 857,
+      "sizeKB": 0.84,
+      "estimatedTokens": 387,
+      "lines": 24
+    },
+    {
+      "path": "automation/TASKS.md",
+      "name": "TASKS.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 3748,
+      "sizeKB": 3.66,
+      "estimatedTokens": 1481,
+      "lines": 124
+    },
+    {
+      "path": "automation/codex-request.md",
+      "name": "codex-request.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 2950,
+      "sizeKB": 2.88,
+      "estimatedTokens": 1276,
+      "lines": 78
+    },
+    {
+      "path": "automation/codex-result.md",
+      "name": "codex-result.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 5027,
+      "sizeKB": 4.91,
+      "estimatedTokens": 2160,
+      "lines": 94
+    },
+    {
+      "path": "automation/remote-visual-cdp.mjs",
+      "name": "remote-visual-cdp.mjs",
+      "dir": "automation",
+      "ext": ".mjs",
+      "sizeBytes": 13490,
+      "sizeKB": 13.17,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "automation/start-webdesk-minimal.sh",
+      "name": "start-webdesk-minimal.sh",
+      "dir": "automation",
+      "ext": ".sh",
+      "sizeBytes": 737,
+      "sizeKB": 0.72,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "automation/status-webdesk-minimal.sh",
+      "name": "status-webdesk-minimal.sh",
+      "dir": "automation",
+      "ext": ".sh",
+      "sizeBytes": 366,
+      "sizeKB": 0.36,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "automation/stop-webdesk-minimal.sh",
+      "name": "stop-webdesk-minimal.sh",
+      "dir": "automation",
+      "ext": ".sh",
+      "sizeBytes": 342,
+      "sizeKB": 0.33,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "content-pipeline/article-schema.md",
+      "name": "article-schema.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1606,
+      "sizeKB": 1.57,
+      "estimatedTokens": 729,
+      "lines": 57
+    },
+    {
+      "path": "content-pipeline/prompts/article-generation.md",
+      "name": "article-generation.md",
+      "dir": "content-pipeline/prompts",
+      "ext": ".md",
+      "sizeBytes": 4447,
+      "sizeKB": 4.34,
+      "estimatedTokens": 2014,
+      "lines": 182
+    },
+    {
+      "path": "content-pipeline/sources.md",
+      "name": "sources.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1290,
+      "sizeKB": 1.26,
+      "estimatedTokens": 530,
+      "lines": 46
+    },
+    {
+      "path": "content-pipeline/style-guide.md",
+      "name": "style-guide.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 2938,
+      "sizeKB": 2.87,
+      "estimatedTokens": 1033,
+      "lines": 70
+    },
+    {
+      "path": "content-pipeline/transcript-workflow.md",
+      "name": "transcript-workflow.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 3882,
+      "sizeKB": 3.79,
+      "estimatedTokens": 1762,
+      "lines": 163
+    },
+    {
+      "path": "memory/2026-03-10.md",
+      "name": "2026-03-10.md",
+      "dir": "memory",
+      "ext": ".md",
+      "sizeBytes": 434,
+      "sizeKB": 0.42,
+      "estimatedTokens": 198,
+      "lines": 6
+    },
+    {
+      "path": "memory/2026-03-11.md",
+      "name": "2026-03-11.md",
+      "dir": "memory",
+      "ext": ".md",
+      "sizeBytes": 1083,
+      "sizeKB": 1.06,
+      "estimatedTokens": 492,
+      "lines": 10
+    },
+    {
+      "path": "memory/2026-03-12.md",
+      "name": "2026-03-12.md",
+      "dir": "memory",
+      "ext": ".md",
+      "sizeBytes": 528,
+      "sizeKB": 0.52,
+      "estimatedTokens": 240,
+      "lines": 7
+    },
+    {
+      "path": "progress.log",
+      "name": "progress.log",
+      "dir": ".",
+      "ext": ".log",
+      "sizeBytes": 1646,
+      "sizeKB": 1.61,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "progress.md",
+      "name": "progress.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 678,
+      "sizeKB": 0.66,
+      "estimatedTokens": 282,
+      "lines": 18
+    },
+    {
+      "path": "rw_test.txt",
+      "name": "rw_test.txt",
+      "dir": ".",
+      "ext": ".txt",
+      "sizeBytes": 37,
+      "sizeKB": 0.04,
+      "estimatedTokens": 17,
+      "lines": 2
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/.clawhub/origin.json",
+      "name": "origin.json",
+      "dir": "skills/youtube-transcript-yt-dlp/.clawhub",
+      "ext": ".json",
+      "sizeBytes": 157,
+      "sizeKB": 0.15,
+      "estimatedTokens": 72,
+      "lines": 7
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/SKILL.md",
+      "name": "SKILL.md",
+      "dir": "skills/youtube-transcript-yt-dlp",
+      "ext": ".md",
+      "sizeBytes": 3854,
+      "sizeKB": 3.76,
+      "estimatedTokens": 1751,
+      "lines": 94
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/_meta.json",
+      "name": "_meta.json",
+      "dir": "skills/youtube-transcript-yt-dlp",
+      "ext": ".json",
+      "sizeBytes": 144,
+      "sizeKB": 0.14,
+      "estimatedTokens": 66,
+      "lines": 6
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/cache/transcripts.sqlite",
+      "name": "transcripts.sqlite",
+      "dir": "skills/youtube-transcript-yt-dlp/cache",
+      "ext": ".sqlite",
+      "sizeBytes": 12288,
+      "sizeKB": 12.0,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/scripts/yt_transcript.py",
+      "name": "yt_transcript.py",
+      "dir": "skills/youtube-transcript-yt-dlp/scripts",
+      "ext": ".py",
+      "sizeBytes": 36857,
+      "sizeKB": 35.99,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "snake-game/index.html",
+      "name": "index.html",
+      "dir": "snake-game",
+      "ext": ".html",
+      "sizeBytes": 23942,
+      "sizeKB": 23.38,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "test-side-scroller/index.html",
+      "name": "index.html",
+      "dir": "test-side-scroller",
+      "ext": ".html",
+      "sizeBytes": 30332,
+      "sizeKB": 29.62,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "tmp-transcript/ZXf5y14EbGM.en.json3",
+      "name": "ZXf5y14EbGM.en.json3",
+      "dir": "tmp-transcript",
+      "ext": ".json3",
+      "sizeBytes": 0,
+      "sizeKB": 0.0,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "tmp-transcript/meta.json",
+      "name": "meta.json",
+      "dir": "tmp-transcript",
+      "ext": ".json",
+      "sizeBytes": 423512,
+      "sizeKB": 413.59,
+      "estimatedTokens": 192506,
+      "lines": 1
+    },
+    {
+      "path": "token-dashboard-auto.tar.gz",
+      "name": "token-dashboard-auto.tar.gz",
+      "dir": ".",
+      "ext": ".gz",
+      "sizeBytes": 9621,
+      "sizeKB": 9.4,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-auto/Dockerfile",
+      "name": "Dockerfile",
+      "dir": "token-dashboard-auto",
+      "ext": "",
+      "sizeBytes": 99,
+      "sizeKB": 0.1,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-auto/README.md",
+      "name": "README.md",
+      "dir": "token-dashboard-auto",
+      "ext": ".md",
+      "sizeBytes": 706,
+      "sizeKB": 0.69,
+      "estimatedTokens": 321,
+      "lines": 21
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/cron.json",
+      "name": "cron.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 422,
+      "sizeKB": 0.41,
+      "estimatedTokens": 192,
+      "lines": 16
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/daily_usage.json",
+      "name": "daily_usage.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 1087,
+      "sizeKB": 1.06,
+      "estimatedTokens": 495,
+      "lines": 53
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/files.json",
+      "name": "files.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 7763,
+      "sizeKB": 7.58,
+      "estimatedTokens": 3529,
+      "lines": 320
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/index.html",
+      "name": "index.html",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".html",
+      "sizeBytes": 9330,
+      "sizeKB": 9.11,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/sessions.json",
+      "name": "sessions.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 4137,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1765,
+      "lines": 89
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/startup.json",
+      "name": "startup.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 1415,
+      "sizeKB": 1.38,
+      "estimatedTokens": 644,
+      "lines": 61
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/summary.json",
+      "name": "summary.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 5238,
+      "sizeKB": 5.12,
+      "estimatedTokens": 2234,
+      "lines": 205
+    },
+    {
+      "path": "token-dashboard-auto/app/server.py",
+      "name": "server.py",
+      "dir": "token-dashboard-auto/app",
+      "ext": ".py",
+      "sizeBytes": 3278,
+      "sizeKB": 3.2,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-deploy.tar.gz",
+      "name": "token-dashboard-deploy.tar.gz",
+      "dir": ".",
+      "ext": ".gz",
+      "sizeBytes": 8141,
+      "sizeKB": 7.95,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-deploy/Dockerfile",
+      "name": "Dockerfile",
+      "dir": "token-dashboard-deploy",
+      "ext": "",
+      "sizeBytes": 67,
+      "sizeKB": 0.07,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-deploy/README.md",
+      "name": "README.md",
+      "dir": "token-dashboard-deploy",
+      "ext": ".md",
+      "sizeBytes": 420,
+      "sizeKB": 0.41,
+      "estimatedTokens": 191,
+      "lines": 17
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/cron.json",
+      "name": "cron.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 422,
+      "sizeKB": 0.41,
+      "estimatedTokens": 192,
+      "lines": 16
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/daily_usage.json",
+      "name": "daily_usage.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 1087,
+      "sizeKB": 1.06,
+      "estimatedTokens": 495,
+      "lines": 53
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/files.json",
+      "name": "files.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 7763,
+      "sizeKB": 7.58,
+      "estimatedTokens": 3529,
+      "lines": 320
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/index.html",
+      "name": "index.html",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".html",
+      "sizeBytes": 9330,
+      "sizeKB": 9.11,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/sessions.json",
+      "name": "sessions.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 4137,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1765,
+      "lines": 89
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/startup.json",
+      "name": "startup.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 1415,
+      "sizeKB": 1.38,
+      "estimatedTokens": 644,
+      "lines": 61
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/summary.json",
+      "name": "summary.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 5238,
+      "sizeKB": 5.12,
+      "estimatedTokens": 2234,
+      "lines": 205
+    },
+    {
+      "path": "token-dashboard-github.tar.gz",
+      "name": "token-dashboard-github.tar.gz",
+      "dir": ".",
+      "ext": ".gz",
+      "sizeBytes": 3510,
+      "sizeKB": 3.43,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/.env.example",
+      "name": ".env.example",
+      "dir": "token-dashboard-github",
+      "ext": ".example",
+      "sizeBytes": 200,
+      "sizeKB": 0.2,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/.gitignore",
+      "name": ".gitignore",
+      "dir": "token-dashboard-github",
+      "ext": "",
+      "sizeBytes": 169,
+      "sizeKB": 0.17,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/Dockerfile",
+      "name": "Dockerfile",
+      "dir": "token-dashboard-github",
+      "ext": "",
+      "sizeBytes": 113,
+      "sizeKB": 0.11,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/README.md",
+      "name": "README.md",
+      "dir": "token-dashboard-github",
+      "ext": ".md",
+      "sizeBytes": 2125,
+      "sizeKB": 2.08,
+      "estimatedTokens": 680,
+      "lines": 54
+    },
+    {
+      "path": "token-dashboard-github/data-sample/cron.json",
+      "name": "cron.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 21,
+      "sizeKB": 0.02,
+      "estimatedTokens": 10,
+      "lines": 3
+    },
+    {
+      "path": "token-dashboard-github/data-sample/daily_usage.json",
+      "name": "daily_usage.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 17,
+      "sizeKB": 0.02,
+      "estimatedTokens": 8,
+      "lines": 3
+    },
+    {
+      "path": "token-dashboard-github/data-sample/files.json",
+      "name": "files.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 177,
+      "sizeKB": 0.17,
+      "estimatedTokens": 81,
+      "lines": 12
+    },
+    {
+      "path": "token-dashboard-github/data-sample/sessions.json",
+      "name": "sessions.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 21,
+      "sizeKB": 0.02,
+      "estimatedTokens": 10,
+      "lines": 3
+    },
+    {
+      "path": "token-dashboard-github/data-sample/startup.json",
+      "name": "startup.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 47,
+      "sizeKB": 0.05,
+      "estimatedTokens": 22,
+      "lines": 4
+    },
+    {
+      "path": "token-dashboard-github/data-sample/summary.json",
+      "name": "summary.json",
+      "dir": "token-dashboard-github/data-sample",
+      "ext": ".json",
+      "sizeBytes": 591,
+      "sizeKB": 0.58,
+      "estimatedTokens": 238,
+      "lines": 22
+    },
+    {
+      "path": "token-dashboard-github/nginx.conf",
+      "name": "nginx.conf",
+      "dir": "token-dashboard-github",
+      "ext": ".conf",
+      "sizeBytes": 172,
+      "sizeKB": 0.17,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/public/index.html",
+      "name": "index.html",
+      "dir": "token-dashboard-github/public",
+      "ext": ".html",
+      "sizeBytes": 4988,
+      "sizeKB": 4.87,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/scripts/init-data-branch.sh",
+      "name": "init-data-branch.sh",
+      "dir": "token-dashboard-github/scripts",
+      "ext": ".sh",
+      "sizeBytes": 830,
+      "sizeKB": 0.81,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/scripts/sync-data.sh",
+      "name": "sync-data.sh",
+      "dir": "token-dashboard-github/scripts",
+      "ext": ".sh",
+      "sizeBytes": 1357,
+      "sizeKB": 1.33,
+      "estimatedTokens": null,
+      "lines": null
+    }
+  ],
   "tree": {
     "name": "workspace",
     "path": ".",
     "type": "dir",
-    "children": {},
-    "sizeBytes": 0,
-    "estimatedTokens": 0,
-    "files": 0
+    "children": {
+      "SOUL.md": {
+        "name": "SOUL.md",
+        "path": "SOUL.md",
+        "type": "file",
+        "sizeBytes": 3151,
+        "estimatedTokens": 592,
+        "lines": 105,
+        "ext": ".md"
+      },
+      "AGENTS.md": {
+        "name": "AGENTS.md",
+        "path": "AGENTS.md",
+        "type": "file",
+        "sizeBytes": 7869,
+        "estimatedTokens": 3541,
+        "lines": 212,
+        "ext": ".md"
+      },
+      "MEMORY.md": {
+        "name": "MEMORY.md",
+        "path": "MEMORY.md",
+        "type": "file",
+        "sizeBytes": 952,
+        "estimatedTokens": 433,
+        "lines": 9,
+        "ext": ".md"
+      },
+      "token-dashboard-auto.tar.gz": {
+        "name": "token-dashboard-auto.tar.gz",
+        "path": "token-dashboard-auto.tar.gz",
+        "type": "file",
+        "sizeBytes": 9621,
+        "estimatedTokens": 0,
+        "lines": null,
+        "ext": ".gz"
+      },
+      "IDENTITY.md": {
+        "name": "IDENTITY.md",
+        "path": "IDENTITY.md",
+        "type": "file",
+        "sizeBytes": 1268,
+        "estimatedTokens": 260,
+        "lines": 39,
+        "ext": ".md"
+      },
+      "TOOLS.md": {
+        "name": "TOOLS.md",
+        "path": "TOOLS.md",
+        "type": "file",
+        "sizeBytes": 860,
+        "estimatedTokens": 387,
+        "lines": 40,
+        "ext": ".md"
+      },
+      "USER.md": {
+        "name": "USER.md",
+        "path": "USER.md",
+        "type": "file",
+        "sizeBytes": 477,
+        "estimatedTokens": 216,
+        "lines": 17,
+        "ext": ".md"
+      },
+      "rw_test.txt": {
+        "name": "rw_test.txt",
+        "path": "rw_test.txt",
+        "type": "file",
+        "sizeBytes": 37,
+        "estimatedTokens": 17,
+        "lines": 2,
+        "ext": ".txt"
+      },
+      "progress.log": {
+        "name": "progress.log",
+        "path": "progress.log",
+        "type": "file",
+        "sizeBytes": 1646,
+        "estimatedTokens": 0,
+        "lines": null,
+        "ext": ".log"
+      },
+      "token-dashboard-github.tar.gz": {
+        "name": "token-dashboard-github.tar.gz",
+        "path": "token-dashboard-github.tar.gz",
+        "type": "file",
+        "sizeBytes": 3510,
+        "estimatedTokens": 0,
+        "lines": null,
+        "ext": ".gz"
+      },
+      "token-dashboard-deploy.tar.gz": {
+        "name": "token-dashboard-deploy.tar.gz",
+        "path": "token-dashboard-deploy.tar.gz",
+        "type": "file",
+        "sizeBytes": 8141,
+        "estimatedTokens": 0,
+        "lines": null,
+        "ext": ".gz"
+      },
+      "progress.md": {
+        "name": "progress.md",
+        "path": "progress.md",
+        "type": "file",
+        "sizeBytes": 678,
+        "estimatedTokens": 282,
+        "lines": 18,
+        "ext": ".md"
+      },
+      "HEARTBEAT.md": {
+        "name": "HEARTBEAT.md",
+        "path": "HEARTBEAT.md",
+        "type": "file",
+        "sizeBytes": 396,
+        "estimatedTokens": 180,
+        "lines": 9,
+        "ext": ".md"
+      },
+      "skills": {
+        "name": "skills",
+        "path": "skills",
+        "type": "dir",
+        "children": {
+          "youtube-transcript-yt-dlp": {
+            "name": "youtube-transcript-yt-dlp",
+            "path": "skills/youtube-transcript-yt-dlp",
+            "type": "dir",
+            "children": {
+              "SKILL.md": {
+                "name": "SKILL.md",
+                "path": "skills/youtube-transcript-yt-dlp/SKILL.md",
+                "type": "file",
+                "sizeBytes": 3854,
+                "estimatedTokens": 1751,
+                "lines": 94,
+                "ext": ".md"
+              },
+              "_meta.json": {
+                "name": "_meta.json",
+                "path": "skills/youtube-transcript-yt-dlp/_meta.json",
+                "type": "file",
+                "sizeBytes": 144,
+                "estimatedTokens": 66,
+                "lines": 6,
+                "ext": ".json"
+              },
+              ".clawhub": {
+                "name": ".clawhub",
+                "path": "skills/youtube-transcript-yt-dlp/.clawhub",
+                "type": "dir",
+                "children": {
+                  "origin.json": {
+                    "name": "origin.json",
+                    "path": "skills/youtube-transcript-yt-dlp/.clawhub/origin.json",
+                    "type": "file",
+                    "sizeBytes": 157,
+                    "estimatedTokens": 72,
+                    "lines": 7,
+                    "ext": ".json"
+                  }
+                },
+                "sizeBytes": 157,
+                "estimatedTokens": 72,
+                "files": 1
+              },
+              "scripts": {
+                "name": "scripts",
+                "path": "skills/youtube-transcript-yt-dlp/scripts",
+                "type": "dir",
+                "children": {
+                  "yt_transcript.py": {
+                    "name": "yt_transcript.py",
+                    "path": "skills/youtube-transcript-yt-dlp/scripts/yt_transcript.py",
+                    "type": "file",
+                    "sizeBytes": 36857,
+                    "estimatedTokens": 0,
+                    "lines": null,
+                    "ext": ".py"
+                  }
+                },
+                "sizeBytes": 36857,
+                "estimatedTokens": 0,
+                "files": 1
+              },
+              "cache": {
+                "name": "cache",
+                "path": "skills/youtube-transcript-yt-dlp/cache",
+                "type": "dir",
+                "children": {
+                  "transcripts.sqlite": {
+                    "name": "transcripts.sqlite",
+                    "path": "skills/youtube-transcript-yt-dlp/cache/transcripts.sqlite",
+                    "type": "file",
+                    "sizeBytes": 12288,
+                    "estimatedTokens": 0,
+                    "lines": null,
+                    "ext": ".sqlite"
+                  }
+                },
+                "sizeBytes": 12288,
+                "estimatedTokens": 0,
+                "files": 1
+              }
+            },
+            "sizeBytes": 53300,
+            "estimatedTokens": 1889,
+            "files": 5
+          }
+        },
+        "sizeBytes": 53300,
+        "estimatedTokens": 1889,
+        "files": 5
+      },
+      "content-pipeline": {
+        "name": "content-pipeline",
+        "path": "content-pipeline",
+        "type": "dir",
+        "children": {
+          "article-schema.md": {
+            "name": "article-schema.md",
+            "path": "content-pipeline/article-schema.md",
+            "type": "file",
+            "sizeBytes": 1606,
+            "estimatedTokens": 729,
+            "lines": 57,
+            "ext": ".md"
+          },
+          "sources.md": {
+            "name": "sources.md",
+            "path": "content-pipeline/sources.md",
+            "type": "file",
+            "sizeBytes": 1290,
+            "estimatedTokens": 530,
+            "lines": 46,
+            "ext": ".md"
+          },
+          "transcript-workflow.md": {
+            "name": "transcript-workflow.md",
+            "path": "content-pipeline/transcript-workflow.md",
+            "type": "file",
+            "sizeBytes": 3882,
+            "estimatedTokens": 1762,
+            "lines": 163,
+            "ext": ".md"
+          },
+          "style-guide.md": {
+            "name": "style-guide.md",
+            "path": "content-pipeline/style-guide.md",
+            "type": "file",
+            "sizeBytes": 2938,
+            "estimatedTokens": 1033,
+            "lines": 70,
+            "ext": ".md"
+          },
+          "prompts": {
+            "name": "prompts",
+            "path": "content-pipeline/prompts",
+            "type": "dir",
+            "children": {
+              "article-generation.md": {
+                "name": "article-generation.md",
+                "path": "content-pipeline/prompts/article-generation.md",
+                "type": "file",
+                "sizeBytes": 4447,
+                "estimatedTokens": 2014,
+                "lines": 182,
+                "ext": ".md"
+              }
+            },
+            "sizeBytes": 4447,
+            "estimatedTokens": 2014,
+            "files": 1
+          }
+        },
+        "sizeBytes": 14163,
+        "estimatedTokens": 6068,
+        "files": 5
+      },
+      "token-dashboard-github": {
+        "name": "token-dashboard-github",
+        "path": "token-dashboard-github",
+        "type": "dir",
+        "children": {
+          "Dockerfile": {
+            "name": "Dockerfile",
+            "path": "token-dashboard-github/Dockerfile",
+            "type": "file",
+            "sizeBytes": 113,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ""
+          },
+          "nginx.conf": {
+            "name": "nginx.conf",
+            "path": "token-dashboard-github/nginx.conf",
+            "type": "file",
+            "sizeBytes": 172,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".conf"
+          },
+          ".env.example": {
+            "name": ".env.example",
+            "path": "token-dashboard-github/.env.example",
+            "type": "file",
+            "sizeBytes": 200,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".example"
+          },
+          "README.md": {
+            "name": "README.md",
+            "path": "token-dashboard-github/README.md",
+            "type": "file",
+            "sizeBytes": 2125,
+            "estimatedTokens": 680,
+            "lines": 54,
+            "ext": ".md"
+          },
+          ".gitignore": {
+            "name": ".gitignore",
+            "path": "token-dashboard-github/.gitignore",
+            "type": "file",
+            "sizeBytes": 169,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ""
+          },
+          "scripts": {
+            "name": "scripts",
+            "path": "token-dashboard-github/scripts",
+            "type": "dir",
+            "children": {
+              "init-data-branch.sh": {
+                "name": "init-data-branch.sh",
+                "path": "token-dashboard-github/scripts/init-data-branch.sh",
+                "type": "file",
+                "sizeBytes": 830,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".sh"
+              },
+              "sync-data.sh": {
+                "name": "sync-data.sh",
+                "path": "token-dashboard-github/scripts/sync-data.sh",
+                "type": "file",
+                "sizeBytes": 1357,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".sh"
+              }
+            },
+            "sizeBytes": 2187,
+            "estimatedTokens": 0,
+            "files": 2
+          },
+          "public": {
+            "name": "public",
+            "path": "token-dashboard-github/public",
+            "type": "dir",
+            "children": {
+              "index.html": {
+                "name": "index.html",
+                "path": "token-dashboard-github/public/index.html",
+                "type": "file",
+                "sizeBytes": 4988,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".html"
+              }
+            },
+            "sizeBytes": 4988,
+            "estimatedTokens": 0,
+            "files": 1
+          },
+          "data-sample": {
+            "name": "data-sample",
+            "path": "token-dashboard-github/data-sample",
+            "type": "dir",
+            "children": {
+              "sessions.json": {
+                "name": "sessions.json",
+                "path": "token-dashboard-github/data-sample/sessions.json",
+                "type": "file",
+                "sizeBytes": 21,
+                "estimatedTokens": 10,
+                "lines": 3,
+                "ext": ".json"
+              },
+              "startup.json": {
+                "name": "startup.json",
+                "path": "token-dashboard-github/data-sample/startup.json",
+                "type": "file",
+                "sizeBytes": 47,
+                "estimatedTokens": 22,
+                "lines": 4,
+                "ext": ".json"
+              },
+              "files.json": {
+                "name": "files.json",
+                "path": "token-dashboard-github/data-sample/files.json",
+                "type": "file",
+                "sizeBytes": 177,
+                "estimatedTokens": 81,
+                "lines": 12,
+                "ext": ".json"
+              },
+              "daily_usage.json": {
+                "name": "daily_usage.json",
+                "path": "token-dashboard-github/data-sample/daily_usage.json",
+                "type": "file",
+                "sizeBytes": 17,
+                "estimatedTokens": 8,
+                "lines": 3,
+                "ext": ".json"
+              },
+              "cron.json": {
+                "name": "cron.json",
+                "path": "token-dashboard-github/data-sample/cron.json",
+                "type": "file",
+                "sizeBytes": 21,
+                "estimatedTokens": 10,
+                "lines": 3,
+                "ext": ".json"
+              },
+              "summary.json": {
+                "name": "summary.json",
+                "path": "token-dashboard-github/data-sample/summary.json",
+                "type": "file",
+                "sizeBytes": 591,
+                "estimatedTokens": 238,
+                "lines": 22,
+                "ext": ".json"
+              }
+            },
+            "sizeBytes": 874,
+            "estimatedTokens": 369,
+            "files": 6
+          }
+        },
+        "sizeBytes": 10828,
+        "estimatedTokens": 1049,
+        "files": 14
+      },
+      ".clawhub": {
+        "name": ".clawhub",
+        "path": ".clawhub",
+        "type": "dir",
+        "children": {
+          "lock.json": {
+            "name": "lock.json",
+            "path": ".clawhub/lock.json",
+            "type": "file",
+            "sizeBytes": 140,
+            "estimatedTokens": 64,
+            "lines": 9,
+            "ext": ".json"
+          }
+        },
+        "sizeBytes": 140,
+        "estimatedTokens": 64,
+        "files": 1
+      },
+      "automation": {
+        "name": "automation",
+        "path": "automation",
+        "type": "dir",
+        "children": {
+          "TASKS.md": {
+            "name": "TASKS.md",
+            "path": "automation/TASKS.md",
+            "type": "file",
+            "sizeBytes": 3748,
+            "estimatedTokens": 1481,
+            "lines": 124,
+            "ext": ".md"
+          },
+          "remote-visual-cdp.mjs": {
+            "name": "remote-visual-cdp.mjs",
+            "path": "automation/remote-visual-cdp.mjs",
+            "type": "file",
+            "sizeBytes": 13490,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".mjs"
+          },
+          "README.md": {
+            "name": "README.md",
+            "path": "automation/README.md",
+            "type": "file",
+            "sizeBytes": 857,
+            "estimatedTokens": 387,
+            "lines": 24,
+            "ext": ".md"
+          },
+          "stop-webdesk-minimal.sh": {
+            "name": "stop-webdesk-minimal.sh",
+            "path": "automation/stop-webdesk-minimal.sh",
+            "type": "file",
+            "sizeBytes": 342,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".sh"
+          },
+          "start-webdesk-minimal.sh": {
+            "name": "start-webdesk-minimal.sh",
+            "path": "automation/start-webdesk-minimal.sh",
+            "type": "file",
+            "sizeBytes": 737,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".sh"
+          },
+          "codex-result.md": {
+            "name": "codex-result.md",
+            "path": "automation/codex-result.md",
+            "type": "file",
+            "sizeBytes": 5027,
+            "estimatedTokens": 2160,
+            "lines": 94,
+            "ext": ".md"
+          },
+          "codex-request.md": {
+            "name": "codex-request.md",
+            "path": "automation/codex-request.md",
+            "type": "file",
+            "sizeBytes": 2950,
+            "estimatedTokens": 1276,
+            "lines": 78,
+            "ext": ".md"
+          },
+          ".webdesk-vnc-passwd": {
+            "name": ".webdesk-vnc-passwd",
+            "path": "automation/.webdesk-vnc-passwd",
+            "type": "file",
+            "sizeBytes": 8,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ""
+          },
+          "status-webdesk-minimal.sh": {
+            "name": "status-webdesk-minimal.sh",
+            "path": "automation/status-webdesk-minimal.sh",
+            "type": "file",
+            "sizeBytes": 366,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".sh"
+          }
+        },
+        "sizeBytes": 27525,
+        "estimatedTokens": 5304,
+        "files": 9
+      },
+      "memory": {
+        "name": "memory",
+        "path": "memory",
+        "type": "dir",
+        "children": {
+          "2026-03-11.md": {
+            "name": "2026-03-11.md",
+            "path": "memory/2026-03-11.md",
+            "type": "file",
+            "sizeBytes": 1083,
+            "estimatedTokens": 492,
+            "lines": 10,
+            "ext": ".md"
+          },
+          "2026-03-10.md": {
+            "name": "2026-03-10.md",
+            "path": "memory/2026-03-10.md",
+            "type": "file",
+            "sizeBytes": 434,
+            "estimatedTokens": 198,
+            "lines": 6,
+            "ext": ".md"
+          },
+          "2026-03-12.md": {
+            "name": "2026-03-12.md",
+            "path": "memory/2026-03-12.md",
+            "type": "file",
+            "sizeBytes": 528,
+            "estimatedTokens": 240,
+            "lines": 7,
+            "ext": ".md"
+          }
+        },
+        "sizeBytes": 2045,
+        "estimatedTokens": 930,
+        "files": 3
+      },
+      "tmp-transcript": {
+        "name": "tmp-transcript",
+        "path": "tmp-transcript",
+        "type": "dir",
+        "children": {
+          "meta.json": {
+            "name": "meta.json",
+            "path": "tmp-transcript/meta.json",
+            "type": "file",
+            "sizeBytes": 423512,
+            "estimatedTokens": 192506,
+            "lines": 1,
+            "ext": ".json"
+          },
+          "ZXf5y14EbGM.en.json3": {
+            "name": "ZXf5y14EbGM.en.json3",
+            "path": "tmp-transcript/ZXf5y14EbGM.en.json3",
+            "type": "file",
+            "sizeBytes": 0,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".json3"
+          }
+        },
+        "sizeBytes": 423512,
+        "estimatedTokens": 192506,
+        "files": 2
+      },
+      "archives": {
+        "name": "archives",
+        "path": "archives",
+        "type": "dir",
+        "children": {
+          "session-summaries": {
+            "name": "session-summaries",
+            "path": "archives/session-summaries",
+            "type": "dir",
+            "children": {
+              "2026-03-10-read-soul-md.md": {
+                "name": "2026-03-10-read-soul-md.md",
+                "path": "archives/session-summaries/2026-03-10-read-soul-md.md",
+                "type": "file",
+                "sizeBytes": 9843,
+                "estimatedTokens": 3179,
+                "lines": 333,
+                "ext": ".md"
+              },
+              "2026-03-10-tools-profile.md": {
+                "name": "2026-03-10-tools-profile.md",
+                "path": "archives/session-summaries/2026-03-10-tools-profile.md",
+                "type": "file",
+                "sizeBytes": 57838,
+                "estimatedTokens": 21016,
+                "lines": 1342,
+                "ext": ".md"
+              },
+              "README.md": {
+                "name": "README.md",
+                "path": "archives/session-summaries/README.md",
+                "type": "file",
+                "sizeBytes": 488,
+                "estimatedTokens": 222,
+                "lines": 10,
+                "ext": ".md"
+              }
+            },
+            "sizeBytes": 68169,
+            "estimatedTokens": 24417,
+            "files": 3
+          }
+        },
+        "sizeBytes": 68169,
+        "estimatedTokens": 24417,
+        "files": 3
+      },
+      "snake-game": {
+        "name": "snake-game",
+        "path": "snake-game",
+        "type": "dir",
+        "children": {
+          "index.html": {
+            "name": "index.html",
+            "path": "snake-game/index.html",
+            "type": "file",
+            "sizeBytes": 23942,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".html"
+          }
+        },
+        "sizeBytes": 23942,
+        "estimatedTokens": 0,
+        "files": 1
+      },
+      "test-side-scroller": {
+        "name": "test-side-scroller",
+        "path": "test-side-scroller",
+        "type": "dir",
+        "children": {
+          "index.html": {
+            "name": "index.html",
+            "path": "test-side-scroller/index.html",
+            "type": "file",
+            "sizeBytes": 30332,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".html"
+          }
+        },
+        "sizeBytes": 30332,
+        "estimatedTokens": 0,
+        "files": 1
+      },
+      "token-dashboard-deploy": {
+        "name": "token-dashboard-deploy",
+        "path": "token-dashboard-deploy",
+        "type": "dir",
+        "children": {
+          "Dockerfile": {
+            "name": "Dockerfile",
+            "path": "token-dashboard-deploy/Dockerfile",
+            "type": "file",
+            "sizeBytes": 67,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ""
+          },
+          "README.md": {
+            "name": "README.md",
+            "path": "token-dashboard-deploy/README.md",
+            "type": "file",
+            "sizeBytes": 420,
+            "estimatedTokens": 191,
+            "lines": 17,
+            "ext": ".md"
+          },
+          "dashboard": {
+            "name": "dashboard",
+            "path": "token-dashboard-deploy/dashboard",
+            "type": "dir",
+            "children": {
+              "sessions.json": {
+                "name": "sessions.json",
+                "path": "token-dashboard-deploy/dashboard/sessions.json",
+                "type": "file",
+                "sizeBytes": 4137,
+                "estimatedTokens": 1765,
+                "lines": 89,
+                "ext": ".json"
+              },
+              "startup.json": {
+                "name": "startup.json",
+                "path": "token-dashboard-deploy/dashboard/startup.json",
+                "type": "file",
+                "sizeBytes": 1415,
+                "estimatedTokens": 644,
+                "lines": 61,
+                "ext": ".json"
+              },
+              "files.json": {
+                "name": "files.json",
+                "path": "token-dashboard-deploy/dashboard/files.json",
+                "type": "file",
+                "sizeBytes": 7763,
+                "estimatedTokens": 3529,
+                "lines": 320,
+                "ext": ".json"
+              },
+              "daily_usage.json": {
+                "name": "daily_usage.json",
+                "path": "token-dashboard-deploy/dashboard/daily_usage.json",
+                "type": "file",
+                "sizeBytes": 1087,
+                "estimatedTokens": 495,
+                "lines": 53,
+                "ext": ".json"
+              },
+              "cron.json": {
+                "name": "cron.json",
+                "path": "token-dashboard-deploy/dashboard/cron.json",
+                "type": "file",
+                "sizeBytes": 422,
+                "estimatedTokens": 192,
+                "lines": 16,
+                "ext": ".json"
+              },
+              "index.html": {
+                "name": "index.html",
+                "path": "token-dashboard-deploy/dashboard/index.html",
+                "type": "file",
+                "sizeBytes": 9330,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".html"
+              },
+              "summary.json": {
+                "name": "summary.json",
+                "path": "token-dashboard-deploy/dashboard/summary.json",
+                "type": "file",
+                "sizeBytes": 5238,
+                "estimatedTokens": 2234,
+                "lines": 205,
+                "ext": ".json"
+              }
+            },
+            "sizeBytes": 29392,
+            "estimatedTokens": 8859,
+            "files": 7
+          }
+        },
+        "sizeBytes": 29879,
+        "estimatedTokens": 9050,
+        "files": 9
+      },
+      "token-dashboard-auto": {
+        "name": "token-dashboard-auto",
+        "path": "token-dashboard-auto",
+        "type": "dir",
+        "children": {
+          "Dockerfile": {
+            "name": "Dockerfile",
+            "path": "token-dashboard-auto/Dockerfile",
+            "type": "file",
+            "sizeBytes": 99,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ""
+          },
+          "README.md": {
+            "name": "README.md",
+            "path": "token-dashboard-auto/README.md",
+            "type": "file",
+            "sizeBytes": 706,
+            "estimatedTokens": 321,
+            "lines": 21,
+            "ext": ".md"
+          },
+          "app": {
+            "name": "app",
+            "path": "token-dashboard-auto/app",
+            "type": "dir",
+            "children": {
+              "server.py": {
+                "name": "server.py",
+                "path": "token-dashboard-auto/app/server.py",
+                "type": "file",
+                "sizeBytes": 3278,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".py"
+              },
+              "dashboard": {
+                "name": "dashboard",
+                "path": "token-dashboard-auto/app/dashboard",
+                "type": "dir",
+                "children": {
+                  "sessions.json": {
+                    "name": "sessions.json",
+                    "path": "token-dashboard-auto/app/dashboard/sessions.json",
+                    "type": "file",
+                    "sizeBytes": 4137,
+                    "estimatedTokens": 1765,
+                    "lines": 89,
+                    "ext": ".json"
+                  },
+                  "startup.json": {
+                    "name": "startup.json",
+                    "path": "token-dashboard-auto/app/dashboard/startup.json",
+                    "type": "file",
+                    "sizeBytes": 1415,
+                    "estimatedTokens": 644,
+                    "lines": 61,
+                    "ext": ".json"
+                  },
+                  "files.json": {
+                    "name": "files.json",
+                    "path": "token-dashboard-auto/app/dashboard/files.json",
+                    "type": "file",
+                    "sizeBytes": 7763,
+                    "estimatedTokens": 3529,
+                    "lines": 320,
+                    "ext": ".json"
+                  },
+                  "daily_usage.json": {
+                    "name": "daily_usage.json",
+                    "path": "token-dashboard-auto/app/dashboard/daily_usage.json",
+                    "type": "file",
+                    "sizeBytes": 1087,
+                    "estimatedTokens": 495,
+                    "lines": 53,
+                    "ext": ".json"
+                  },
+                  "cron.json": {
+                    "name": "cron.json",
+                    "path": "token-dashboard-auto/app/dashboard/cron.json",
+                    "type": "file",
+                    "sizeBytes": 422,
+                    "estimatedTokens": 192,
+                    "lines": 16,
+                    "ext": ".json"
+                  },
+                  "index.html": {
+                    "name": "index.html",
+                    "path": "token-dashboard-auto/app/dashboard/index.html",
+                    "type": "file",
+                    "sizeBytes": 9330,
+                    "estimatedTokens": 0,
+                    "lines": null,
+                    "ext": ".html"
+                  },
+                  "summary.json": {
+                    "name": "summary.json",
+                    "path": "token-dashboard-auto/app/dashboard/summary.json",
+                    "type": "file",
+                    "sizeBytes": 5238,
+                    "estimatedTokens": 2234,
+                    "lines": 205,
+                    "ext": ".json"
+                  }
+                },
+                "sizeBytes": 29392,
+                "estimatedTokens": 8859,
+                "files": 7
+              }
+            },
+            "sizeBytes": 32670,
+            "estimatedTokens": 8859,
+            "files": 8
+          }
+        },
+        "sizeBytes": 33475,
+        "estimatedTokens": 9180,
+        "files": 10
+      },
+      ".openclaw": {
+        "name": ".openclaw",
+        "path": ".openclaw",
+        "type": "dir",
+        "children": {
+          "workspace-state.json": {
+            "name": "workspace-state.json",
+            "path": ".openclaw/workspace-state.json",
+            "type": "file",
+            "sizeBytes": 74,
+            "estimatedTokens": 34,
+            "lines": 4,
+            "ext": ".json"
+          }
+        },
+        "sizeBytes": 74,
+        "estimatedTokens": 34,
+        "files": 1
+      }
+    },
+    "sizeBytes": 755990,
+    "estimatedTokens": 256399,
+    "files": 77
   }
 }

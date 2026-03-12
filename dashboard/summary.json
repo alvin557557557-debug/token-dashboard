@@ -1,22 +1,243 @@
 {
-  "generatedAtUtc": "2026-03-12T00:00:00Z",
+  "generatedAtUtc": "2026-03-12T06:26:45Z",
   "counts": {
-    "files": 0,
-    "sessions": 0,
-    "cronRunsDetected": 0,
+    "files": 77,
+    "sessions": 4,
+    "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
   "startupBaseline": null,
   "recommendations": [
     {
-      "priority": "medium",
-      "title": "等待首次同步",
-      "detail": "data branch 已初始化，但還沒有從 OpenClaw workspace 推送真正的 dashboard JSON。執行 scripts/sync-data.sh 後就會出現即時資料。",
+      "priority": "high",
+      "title": "拆分或搬移最大記憶檔",
+      "detail": "tmp-transcript/meta.json 目前約 192506 tokens，若改成摘要 + archive 按需讀取，可望一次少掉數千到上萬 tokens 的潛在載入壓力。",
       "targets": [
-        "dashboard/*.json"
+        "tmp-transcript/meta.json"
       ],
-      "projectedSavingsTokens": "n/a"
+      "projectedSavingsTokens": "3k–15k / relevant load"
+    },
+    {
+      "priority": "medium",
+      "title": "繼續壓縮 cron prompt 與輸出長度",
+      "detail": "目前觀測 cron 平均約 11154 total tokens。可用更短 prompt、固定格式、限制 3-4 則來進一步降耗。",
+      "targets": [
+        "daily-tech-news-8am-taipei"
+      ],
+      "projectedSavingsTokens": "1k–4k / run"
+    },
+    {
+      "priority": "medium",
+      "title": "把長文資料移到 references/archive",
+      "detail": "保留功能，但避免把不常用長文放在容易被啟動或檢索掃到的路徑。",
+      "targets": [
+        "memory/",
+        "AGENTS.md",
+        "TOOLS.md"
+      ],
+      "projectedSavingsTokens": "視命中路徑而定"
     }
   ],
-  "topFilesByEstimatedTokens": []
+  "topFilesByEstimatedTokens": [
+    {
+      "path": "tmp-transcript/meta.json",
+      "name": "meta.json",
+      "dir": "tmp-transcript",
+      "ext": ".json",
+      "sizeBytes": 423512,
+      "sizeKB": 413.59,
+      "estimatedTokens": 192506,
+      "lines": 1
+    },
+    {
+      "path": "archives/session-summaries/2026-03-10-tools-profile.md",
+      "name": "2026-03-10-tools-profile.md",
+      "dir": "archives/session-summaries",
+      "ext": ".md",
+      "sizeBytes": 57838,
+      "sizeKB": 56.48,
+      "estimatedTokens": 21016,
+      "lines": 1342
+    },
+    {
+      "path": "AGENTS.md",
+      "name": "AGENTS.md",
+      "dir": ".",
+      "ext": ".md",
+      "sizeBytes": 7869,
+      "sizeKB": 7.68,
+      "estimatedTokens": 3541,
+      "lines": 212
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/files.json",
+      "name": "files.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 7763,
+      "sizeKB": 7.58,
+      "estimatedTokens": 3529,
+      "lines": 320
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/files.json",
+      "name": "files.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 7763,
+      "sizeKB": 7.58,
+      "estimatedTokens": 3529,
+      "lines": 320
+    },
+    {
+      "path": "archives/session-summaries/2026-03-10-read-soul-md.md",
+      "name": "2026-03-10-read-soul-md.md",
+      "dir": "archives/session-summaries",
+      "ext": ".md",
+      "sizeBytes": 9843,
+      "sizeKB": 9.61,
+      "estimatedTokens": 3179,
+      "lines": 333
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/summary.json",
+      "name": "summary.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 5238,
+      "sizeKB": 5.12,
+      "estimatedTokens": 2234,
+      "lines": 205
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/summary.json",
+      "name": "summary.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 5238,
+      "sizeKB": 5.12,
+      "estimatedTokens": 2234,
+      "lines": 205
+    },
+    {
+      "path": "automation/codex-result.md",
+      "name": "codex-result.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 5027,
+      "sizeKB": 4.91,
+      "estimatedTokens": 2160,
+      "lines": 94
+    },
+    {
+      "path": "content-pipeline/prompts/article-generation.md",
+      "name": "article-generation.md",
+      "dir": "content-pipeline/prompts",
+      "ext": ".md",
+      "sizeBytes": 4447,
+      "sizeKB": 4.34,
+      "estimatedTokens": 2014,
+      "lines": 182
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/sessions.json",
+      "name": "sessions.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 4137,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1765,
+      "lines": 89
+    },
+    {
+      "path": "token-dashboard-deploy/dashboard/sessions.json",
+      "name": "sessions.json",
+      "dir": "token-dashboard-deploy/dashboard",
+      "ext": ".json",
+      "sizeBytes": 4137,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1765,
+      "lines": 89
+    },
+    {
+      "path": "content-pipeline/transcript-workflow.md",
+      "name": "transcript-workflow.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 3882,
+      "sizeKB": 3.79,
+      "estimatedTokens": 1762,
+      "lines": 163
+    },
+    {
+      "path": "skills/youtube-transcript-yt-dlp/SKILL.md",
+      "name": "SKILL.md",
+      "dir": "skills/youtube-transcript-yt-dlp",
+      "ext": ".md",
+      "sizeBytes": 3854,
+      "sizeKB": 3.76,
+      "estimatedTokens": 1751,
+      "lines": 94
+    },
+    {
+      "path": "automation/TASKS.md",
+      "name": "TASKS.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 3748,
+      "sizeKB": 3.66,
+      "estimatedTokens": 1481,
+      "lines": 124
+    },
+    {
+      "path": "automation/codex-request.md",
+      "name": "codex-request.md",
+      "dir": "automation",
+      "ext": ".md",
+      "sizeBytes": 2950,
+      "sizeKB": 2.88,
+      "estimatedTokens": 1276,
+      "lines": 78
+    },
+    {
+      "path": "content-pipeline/style-guide.md",
+      "name": "style-guide.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 2938,
+      "sizeKB": 2.87,
+      "estimatedTokens": 1033,
+      "lines": 70
+    },
+    {
+      "path": "content-pipeline/article-schema.md",
+      "name": "article-schema.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1606,
+      "sizeKB": 1.57,
+      "estimatedTokens": 729,
+      "lines": 57
+    },
+    {
+      "path": "token-dashboard-github/README.md",
+      "name": "README.md",
+      "dir": "token-dashboard-github",
+      "ext": ".md",
+      "sizeBytes": 2125,
+      "sizeKB": 2.08,
+      "estimatedTokens": 680,
+      "lines": 54
+    },
+    {
+      "path": "token-dashboard-auto/app/dashboard/startup.json",
+      "name": "startup.json",
+      "dir": "token-dashboard-auto/app/dashboard",
+      "ext": ".json",
+      "sizeBytes": 1415,
+      "sizeKB": 1.38,
+      "estimatedTokens": 644,
+      "lines": 61
+    }
+  ]
 }

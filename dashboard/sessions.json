@@ -1,3 +1,115 @@
 {
-  "sessions": []
+  "sessions": [
+    {
+      "sessionId": "17855fdf-f4f7-4a3d-9ebe-0846702903ae",
+      "path": "/home/node/.openclaw/agents/main/sessions/17855fdf-f4f7-4a3d-9ebe-0846702903ae.jsonl",
+      "sizeBytes": 103828,
+      "startedAt": "2026-03-12T04:06:36.921Z",
+      "lastTimestamp": "2026-03-12T06:10:25.177Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 11
+      },
+      "assistantTurns": 11,
+      "usage": {
+        "input": 49421,
+        "output": 1739,
+        "cacheRead": 105600,
+        "cacheWrite": 0,
+        "total": 156760,
+        "cost": 0.1760375,
+        "assistantTurns": 11
+      },
+      "firstUserSnippet": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.\nWhen reading HEARTBEAT.md, use workspace file /home/node/.openclaw/workspace/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.\nCurrent time: Thursday, March 12th, 2026 — 4:06 AM (UTC) / 2026-03-12 04:06 UTC",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 5,
+        "assistant": 11,
+        "toolResult": 15
+      }
+    },
+    {
+      "sessionId": "78b444ed-5e7a-4519-a071-89289039dbd5",
+      "path": "/home/node/.openclaw/agents/main/sessions/78b444ed-5e7a-4519-a071-89289039dbd5.jsonl",
+      "sizeBytes": 6363,
+      "startedAt": "2026-03-12T02:25:27.636Z",
+      "lastTimestamp": "2026-03-12T02:25:31.798Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 1
+      },
+      "assistantTurns": 1,
+      "usage": {
+        "input": 7097,
+        "output": 118,
+        "cacheRead": 5632,
+        "cacheWrite": 0,
+        "total": 12847,
+        "cost": 0.0209205,
+        "assistantTurns": 1
+      },
+      "firstUserSnippet": "[Queued messages while agent was busy]\n\n---\nQueued #1\nConversation info (untrusted metadata):\n```json\n{\n  \"message_id\": \"775\",\n  \"sender_id\": \"822312358\",\n  \"sender\": \"👽 Alvin\",\n  \"timestamp\": \"Thu 2026-03-12 02:11 UTC\"\n}\n```\n\nSender (untrusted metadata):\n```json\n{\n  \"label\": \"👽 Alvin (822312358)\",\n  \"id\": \"822312358\",\n  \"name\": \"👽 Alvin\",\n  \"username\": \"tatamo1119\"\n}\n```\n\n還好嗎?\n\n---\nQueued #2\nConversation info (untrusted metadata):\n```json\n{\n  \"message_id\": \"776\",\n  \"sender_id\": \"822312358\",\n  \"sender\": \"👽 Alvin\",\n  \"timestamp\": \"Thu 2026-03-12 02:12 UTC\"\n}\n```\n\nSender (untrusted metadata):\n```json\n{\n  \"label\": \"👽 Alvin (822312358)\",\n  \"id\": \"822312358\",\n  \"name\": \"👽 Alvin\",\n  \"username\": \"t",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 1,
+        "assistant": 1
+      }
+    },
+    {
+      "sessionId": "9970c0e2-9db9-4761-891a-fbcc63a049e7",
+      "path": "/home/node/.openclaw/agents/main/sessions/9970c0e2-9db9-4761-891a-fbcc63a049e7.jsonl",
+      "sizeBytes": 127790,
+      "startedAt": "2026-03-12T00:00:00.036Z",
+      "lastTimestamp": "2026-03-12T00:02:07.737Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 7
+      },
+      "assistantTurns": 7,
+      "usage": {
+        "input": 22117,
+        "output": 1432,
+        "cacheRead": 91136,
+        "cacheWrite": 0,
+        "total": 114685,
+        "cost": 0.0995565,
+        "assistantTurns": 7
+      },
+      "firstUserSnippet": "[cron:eb595f1a-fc2c-4250-8c18-ae06b1365e41 daily-tech-news-8am-taipei] 請整理今日科技新聞短版摘要並用繁體中文回報。只列 3-5 則最值得注意的科技新聞，優先涵蓋 AI、半導體、消費電子、網路服務、資安。每則只用 1-2 句，整體務必精簡，適合直接發送到 Telegram。若沒有特別重大的新聞，就明說今天偏平淡，不要硬湊。直接輸出給使用者閱讀，不要描述內部流程。\nCurrent time: Thursday, March 12th, 2026 — 12:00 AM (UTC) / 2026-03-12 00:00 UTC\n\nReturn your summary as plain text; it will be delivered automatically. If the task explicitly calls for messaging a specific external recipient, note who/where it should go instead of sending it yourself.",
+      "kindGuess": "cron",
+      "roleCounts": {
+        "user": 1,
+        "assistant": 7,
+        "toolResult": 16
+      }
+    },
+    {
+      "sessionId": "bd6ac66f-95b7-4deb-b04d-f1b612bc78ad",
+      "path": "/home/node/.openclaw/agents/main/sessions/bd6ac66f-95b7-4deb-b04d-f1b612bc78ad.jsonl",
+      "sizeBytes": 1264963,
+      "startedAt": "2026-03-12T04:03:37.076Z",
+      "lastTimestamp": "2026-03-12T06:23:41.976Z",
+      "dominantModel": "gpt-5.4",
+      "models": {
+        "gpt-5.4": 63
+      },
+      "assistantTurns": 63,
+      "usage": {
+        "input": 554295,
+        "output": 18550,
+        "cacheRead": 2290816,
+        "cacheWrite": 0,
+        "total": 2863661,
+        "cost": 2.2366915000000005,
+        "assistantTurns": 63
+      },
+      "firstUserSnippet": "System: [2026-03-12 04:03:36 UTC] Reminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nA scheduled reminder has been triggered. The reminder content is:\n\nReminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nPlease relay this reminder to the user in a helpful and friendly way.\nCurre",
+      "kindGuess": "direct",
+      "roleCounts": {
+        "user": 35,
+        "assistant": 63,
+        "toolResult": 28
+      }
+    }
+  ]
 }

@@ -1,3 +1,16 @@
 {
-  "cronRuns": []
+  "cronRuns": [
+    {
+      "sessionId": "9970c0e2-9db9-4761-891a-fbcc63a049e7",
+      "startedAt": "2026-03-12T00:00:00.036Z",
+      "model": "gpt-5.4",
+      "input": 8339,
+      "output": 255,
+      "cacheRead": 2560,
+      "cacheWrite": 0,
+      "total": 11154,
+      "cost": 0.0253125,
+      "transcript": "/home/node/.openclaw/agents/main/sessions/9970c0e2-9db9-4761-891a-fbcc63a049e7.jsonl"
+    }
+  ]
 }

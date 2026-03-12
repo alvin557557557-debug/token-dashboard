@@ -1,0 +1,62 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>OpenClaw Token 使用儀表板</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0b1020;color:#e8ecf3;margin:0}
+header{padding:20px 24px;background:#111831;position:sticky;top:0;z-index:5;border-bottom:1px solid #243152}
+main{padding:24px;max-width:1500px;margin:0 auto}.card{background:#141c36;border:1px solid #273255;border-radius:14px;padding:16px;margin:0 0 16px 0;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.metric{font-size:28px;font-weight:700}.muted{color:#9fb0d1}.small{font-size:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px 10px;border-bottom:1px solid #243152;text-align:left;vertical-align:top}th{position:sticky;top:72px;background:#141c36}
+code{background:#0c1430;padding:2px 6px;border-radius:6px} input{width:100%;padding:10px;border-radius:10px;border:1px solid #2a385f;background:#0c1430;color:#fff}
+.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#23325c;color:#cfe0ff;font-size:12px}.high{background:#4a1820;color:#ffc6ce}.medium{background:#4a3411;color:#ffd596}.low{background:#173b2d;color:#b8ffd8}
+.tree ul{list-style:none;padding-left:18px}.tree li{margin:4px 0}.tree summary{cursor:pointer}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.tabs button{margin-right:8px;padding:8px 12px;border-radius:10px;border:1px solid #2a385f;background:#0c1430;color:#fff;cursor:pointer}.tabs button.active{background:#223460}.hidden{display:none}.right{text-align:right}
+</style></head><body><header><h1 style="margin:0">OpenClaw Token 使用儀表板</h1><div class="muted">唯讀 · 靜態頁面 · workspace 與 session transcript 稽核</div></header><main>
+<div class="grid" id="metrics"></div>
+<div class="card tabs"><button class="active" data-tab="overview">總覽</button><button data-tab="files">檔案</button><button data-tab="tree">目錄樹</button><button data-tab="sessions">Sessions 紀錄</button></div>
+<div id="overview" class="tab card"></div>
+<div id="files" class="tab card hidden"></div>
+<div id="tree" class="tab card hidden"></div>
+<div id="sessions" class="tab card hidden"></div>
+<script>
+async function load(n){return fetch('./'+n).then(r=>r.json())}
+const fmt=n=>(n===null||n===undefined||Number.isNaN(Number(n)))?'-':Number(n).toLocaleString('en-US');
+const money=n=>'$'+Number(n||0).toFixed(4);
+function renderTree(node){
+  const kids=Object.values(node.children||{}).sort((a,b)=>(b.estimatedTokens||0)-(a.estimatedTokens||0));
+  if(node.type==='file') return `<li><span class="mono">${node.name}</span> <span class="muted">${fmt(node.sizeBytes)} B · ${fmt(node.estimatedTokens)} tokens</span></li>`;
+  return `<li><details ${node.path==='.'?'open':''}><summary><span class="mono">${node.path}</span> <span class="muted">${fmt(node.files||0)} 檔案 · ${fmt(node.sizeBytes)} B · ${fmt(node.estimatedTokens)} tokens</span></summary><ul>${kids.map(renderTree).join('')}</ul></details></li>`;
+}
+Promise.all([load('summary.json'),load('files.json'),load('sessions.json'),load('cron.json'),load('startup.json'),load('daily_usage.json')]).then(([summary,files,sessions,cron,startup,daily])=>{
+  const top=(summary.topFilesByEstimatedTokens||[])[0]||{};
+  const cronRuns=cron.cronRuns||[];
+  const cronAvg = cronRuns.length ? cronRuns.reduce((a,b)=>a+(b.total||0),0)/cronRuns.length : 0;
+  document.getElementById('metrics').innerHTML=`
+  <div class="card"><div class="muted">啟動輸入 tokens</div><div class="metric">${fmt(summary.startupBaseline?.usage?.input||0)}</div></div>
+  <div class="card"><div class="muted">Cron 平均總 tokens</div><div class="metric">${fmt(cronAvg)}</div></div>
+  <div class="card"><div class="muted">最大檔案估算 tokens</div><div class="metric">${fmt(top.estimatedTokens||0)}</div><div class="small muted mono">${top.path||'-'}</div></div>
+  <div class="card"><div class="muted">已掃描 sessions</div><div class="metric">${fmt(summary.counts?.sessions||0)}</div></div>`;
+
+  const dailyRows=[];
+  Object.keys(daily.days||{}).sort().forEach(day=>Object.entries(daily.days[day]||{}).forEach(([m,u])=>dailyRows.push(`<tr><td>${day}</td><td><code>${m}</code></td><td class="right">${fmt(u.input)}</td><td class="right">${fmt(u.output)}</td><td class="right">${fmt(u.cacheRead)}</td><td class="right">${fmt(u.total)}</td><td class="right">${money(u.cost)}</td><td class="right">${fmt(u.turns)}</td></tr>`)));
+
+  const startupRows=(startup.startupFiles||[]).map(r=>`<tr><td><code>${r.path}</code></td><td class="right">${fmt(r.sizeBytes)}</td><td class="right">${fmt(r.estimatedTokens)}</td><td class="right">${fmt(r.estimatedStartupInputShare)}</td><td class="right">${r.sharePct||'-'}%</td></tr>`).join('');
+  const cronRows=cronRuns.map(r=>`<tr><td>${r.startedAt||'-'}</td><td><code>${r.model||'-'}</code></td><td class="right">${fmt(r.input)}</td><td class="right">${fmt(r.output)}</td><td class="right">${fmt(r.cacheRead)}</td><td class="right">${fmt(r.total)}</td><td class="right">${money(r.cost)}</td></tr>`).join('');
+  const recs=(summary.recommendations||[]).map(r=>`<div style="margin:0 0 12px 0"><span class="badge ${r.priority}">${r.priority}</span> <b>${r.title}</b><div class="muted">${r.detail}</div><div class="small">預估節省： ${r.projectedSavingsTokens||'-'}</div><div class="small">目標： ${(r.targets||[]).map(t=>`<code>${t}</code>`).join(' ')}</div></div>`).join('');
+
+  document.getElementById('overview').innerHTML=`<h2>過去 5 天每日 token 使用量</h2><table><thead><tr><th>日期</th><th>模型</th><th class="right">輸入</th><th class="right">輸出</th><th class="right">快取讀取</th><th class="right">總計</th><th class="right">成本</th><th class="right">回合數</th></tr></thead><tbody>${dailyRows.join('')}</tbody></table><h2>新 Session 啟動分析</h2><p>基準 session <code>${summary.startupBaseline?.sessionId||'-'}</code> · 模型 <code>${summary.startupBaseline?.model||'-'}</code> · total <b>${fmt(summary.startupBaseline?.usage?.totalTokens||0)}</b></p><table><thead><tr><th>檔案</th><th class="right">位元組</th><th class="right">估算 tokens</th><th class="right">估算啟動分攤</th><th class="right">占比</th></tr></thead><tbody>${startupRows}</tbody></table><h2>Cron 執行紀錄</h2><table><thead><tr><th>開始時間</th><th>模型</th><th class="right">輸入</th><th class="right">輸出</th><th class="right">快取讀取</th><th class="right">總計</th><th class="right">成本</th></tr></thead><tbody>${cronRows}</tbody></table><h2>優化建議</h2>${recs}`;
+
+  function renderFiles(q=''){
+    q=q.toLowerCase();
+    const rows=(files.files||[]).filter(f=>!q||f.path.toLowerCase().includes(q)||(f.ext||'').includes(q)).sort((a,b)=>(b.estimatedTokens||0)-(a.estimatedTokens||0)).map(f=>`<tr><td><code>${f.path}</code></td><td>${f.ext}</td><td class="right">${fmt(f.sizeBytes)}</td><td class="right">${fmt(f.lines)}</td><td class="right">${fmt(f.estimatedTokens)}</td></tr>`).join('');
+    document.getElementById('files').innerHTML=`<h2>Context 檔案瀏覽器</h2><input id="filter" placeholder="輸入路徑、檔名或副檔名，例如 memory/ 或 .md"><div style="margin-top:12px"></div><table><thead><tr><th>路徑</th><th>副檔名</th><th class="right">位元組</th><th class="right">行數</th><th class="right">估算 tokens</th></tr></thead><tbody>${rows}</tbody></table>`;
+    document.getElementById('filter').value = q;
+    document.getElementById('filter').addEventListener('input',e=>renderFiles(e.target.value));
+  }
+  renderFiles();
+
+  document.getElementById('tree').innerHTML=`<h2>資料夾樹狀檢視</h2><div class="tree"><ul>${renderTree(files.tree)}</ul></div>`;
+  const srows=(sessions.sessions||[]).sort((a,b)=>(b.usage?.total||0)-(a.usage?.total||0)).map(s=>`<tr><td><code>${s.sessionId}</code></td><td>${s.kindGuess}</td><td><code>${s.dominantModel||'-'}</code></td><td class="right">${fmt(s.usage?.input)}</td><td class="right">${fmt(s.usage?.output)}</td><td class="right">${fmt(s.usage?.cacheRead)}</td><td class="right">${fmt(s.usage?.total)}</td><td class="right">${money(s.usage?.cost)}</td><td class="small">${(s.firstUserSnippet||'').replace(/</g,'&lt;')}</td></tr>`).join('');
+  document.getElementById('sessions').innerHTML=`<h2>Sessions 紀錄</h2><table><thead><tr><th>Session</th><th>類型</th><th>模型</th><th class="right">輸入</th><th class="right">輸出</th><th class="right">快取讀取</th><th class="right">總計</th><th class="right">成本</th><th>第一段使用者訊息</th></tr></thead><tbody>${srows}</tbody></table>`;
+  document.querySelectorAll('.tabs button').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); document.querySelectorAll('.tab').forEach(t=>t.classList.add('hidden')); document.getElementById(btn.dataset.tab).classList.remove('hidden')});
+}).catch(err=>{
+  document.getElementById('overview').innerHTML = `<h2>載入失敗</h2><pre style="white-space:pre-wrap">${String(err && err.stack || err)}</pre>`;
+});
+</script></main></body></html>

@@ -1,4 +1,40 @@
 {
   "startupTurns": [],
-  "startupFiles": []
+  "startupFiles": [
+    {
+      "path": "AGENTS.md",
+      "sizeBytes": 7869,
+      "estimatedTokens": 3541,
+      "estimatedStartupInputShare": null,
+      "sharePct": 71.1
+    },
+    {
+      "path": "SOUL.md",
+      "sizeBytes": 3151,
+      "estimatedTokens": 592,
+      "estimatedStartupInputShare": null,
+      "sharePct": 11.9
+    },
+    {
+      "path": "USER.md",
+      "sizeBytes": 477,
+      "estimatedTokens": 216,
+      "estimatedStartupInputShare": null,
+      "sharePct": 4.3
+    },
+    {
+      "path": "MEMORY.md",
+      "sizeBytes": 952,
+      "estimatedTokens": 433,
+      "estimatedStartupInputShare": null,
+      "sharePct": 8.7
+    },
+    {
+      "path": "memory/2026-03-10.md",
+      "sizeBytes": 434,
+      "estimatedTokens": 198,
+      "estimatedStartupInputShare": null,
+      "sharePct": 4.0
+    }
+  ]
 }
