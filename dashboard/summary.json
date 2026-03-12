@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T07:32:52Z",
+  "generatedAtUtc": "2026-03-12T08:02:43Z",
   "counts": {
-    "files": 85,
-    "sessions": 5,
+    "files": 96,
+    "sessions": 6,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -184,10 +184,10 @@
       "name": "TASKS.md",
       "dir": "automation",
       "ext": ".md",
-      "sizeBytes": 4025,
-      "sizeKB": 3.93,
-      "estimatedTokens": 1604,
-      "lines": 127
+      "sizeBytes": 4140,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1644,
+      "lines": 128
     },
     {
       "path": "automation/codex-request.md",
@@ -220,24 +220,24 @@
       "lines": 70
     },
     {
-      "path": "content-pipeline/handoff-schema.md",
-      "name": "handoff-schema.md",
-      "dir": "content-pipeline",
+      "path": "content-pipeline/published/example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+      "name": "example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+      "dir": "content-pipeline/published",
       "ext": ".md",
-      "sizeBytes": 1638,
-      "sizeKB": 1.6,
-      "estimatedTokens": 745,
-      "lines": 118
+      "sizeBytes": 2473,
+      "sizeKB": 2.42,
+      "estimatedTokens": 847,
+      "lines": 49
     },
     {
-      "path": "content-pipeline/article-schema.md",
-      "name": "article-schema.md",
-      "dir": "content-pipeline",
+      "path": "content-pipeline/published/ai.md",
+      "name": "ai.md",
+      "dir": "content-pipeline/published",
       "ext": ".md",
-      "sizeBytes": 1606,
-      "sizeKB": 1.57,
-      "estimatedTokens": 729,
-      "lines": 57
+      "sizeBytes": 2395,
+      "sizeKB": 2.34,
+      "estimatedTokens": 812,
+      "lines": 49
     }
   ]
 }

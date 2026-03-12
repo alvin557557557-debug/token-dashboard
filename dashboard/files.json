@@ -145,10 +145,10 @@
       "name": "TASKS.md",
       "dir": "automation",
       "ext": ".md",
-      "sizeBytes": 4025,
-      "sizeKB": 3.93,
-      "estimatedTokens": 1604,
-      "lines": 127
+      "sizeBytes": 4140,
+      "sizeKB": 4.04,
+      "estimatedTokens": 1644,
+      "lines": 128
     },
     {
       "path": "automation/codex-request.md",
@@ -211,6 +211,16 @@
       "lines": null
     },
     {
+      "path": "content-pipeline/README.md",
+      "name": "README.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 849,
+      "sizeKB": 0.83,
+      "estimatedTokens": 379,
+      "lines": 32
+    },
+    {
       "path": "content-pipeline/article-schema.md",
       "name": "article-schema.md",
       "dir": "content-pipeline",
@@ -219,6 +229,16 @@
       "sizeKB": 1.57,
       "estimatedTokens": 729,
       "lines": 57
+    },
+    {
+      "path": "content-pipeline/drafts/example-001.yaml",
+      "name": "example-001.yaml",
+      "dir": "content-pipeline/drafts",
+      "ext": ".yaml",
+      "sizeBytes": 2308,
+      "sizeKB": 2.25,
+      "estimatedTokens": 779,
+      "lines": 30
     },
     {
       "path": "content-pipeline/examples/example-item.yaml",
@@ -251,6 +271,36 @@
       "lines": 118
     },
     {
+      "path": "content-pipeline/input/example-001.yaml",
+      "name": "example-001.yaml",
+      "dir": "content-pipeline/input",
+      "ext": ".yaml",
+      "sizeBytes": 503,
+      "sizeKB": 0.49,
+      "estimatedTokens": 229,
+      "lines": 13
+    },
+    {
+      "path": "content-pipeline/logs/example-001.log",
+      "name": "example-001.log",
+      "dir": "content-pipeline/logs",
+      "ext": ".log",
+      "sizeBytes": 394,
+      "sizeKB": 0.38,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "content-pipeline/metadata/example-001.yaml",
+      "name": "example-001.yaml",
+      "dir": "content-pipeline/metadata",
+      "ext": ".yaml",
+      "sizeBytes": 926,
+      "sizeKB": 0.9,
+      "estimatedTokens": 395,
+      "lines": 22
+    },
+    {
       "path": "content-pipeline/mvp-runbook.md",
       "name": "mvp-runbook.md",
       "dir": "content-pipeline",
@@ -281,6 +331,56 @@
       "lines": 125
     },
     {
+      "path": "content-pipeline/prompts/runner-notes.md",
+      "name": "runner-notes.md",
+      "dir": "content-pipeline/prompts",
+      "ext": ".md",
+      "sizeBytes": 619,
+      "sizeKB": 0.6,
+      "estimatedTokens": 282,
+      "lines": 20
+    },
+    {
+      "path": "content-pipeline/published/ai-adoption-bad-process-automation-risk.md",
+      "name": "ai-adoption-bad-process-automation-risk.md",
+      "dir": "content-pipeline/published",
+      "ext": ".md",
+      "sizeBytes": 3706,
+      "sizeKB": 3.62,
+      "estimatedTokens": 803,
+      "lines": 66
+    },
+    {
+      "path": "content-pipeline/published/ai.md",
+      "name": "ai.md",
+      "dir": "content-pipeline/published",
+      "ext": ".md",
+      "sizeBytes": 2395,
+      "sizeKB": 2.34,
+      "estimatedTokens": 812,
+      "lines": 49
+    },
+    {
+      "path": "content-pipeline/published/example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+      "name": "example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+      "dir": "content-pipeline/published",
+      "ext": ".md",
+      "sizeBytes": 2473,
+      "sizeKB": 2.42,
+      "estimatedTokens": 847,
+      "lines": 49
+    },
+    {
+      "path": "content-pipeline/run-item.py",
+      "name": "run-item.py",
+      "dir": "content-pipeline",
+      "ext": ".py",
+      "sizeBytes": 10544,
+      "sizeKB": 10.3,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
       "path": "content-pipeline/sources.md",
       "name": "sources.md",
       "dir": "content-pipeline",
@@ -309,6 +409,16 @@
       "sizeKB": 3.79,
       "estimatedTokens": 1762,
       "lines": 163
+    },
+    {
+      "path": "content-pipeline/transcripts/example-001.txt",
+      "name": "example-001.txt",
+      "dir": "content-pipeline/transcripts",
+      "ext": ".txt",
+      "sizeBytes": 738,
+      "sizeKB": 0.72,
+      "estimatedTokens": 334,
+      "lines": 5
     },
     {
       "path": "memory/2026-03-10.md",
@@ -345,8 +455,8 @@
       "name": "progress.log",
       "dir": ".",
       "ext": ".log",
-      "sizeBytes": 1846,
-      "sizeKB": 1.8,
+      "sizeBytes": 2241,
+      "sizeKB": 2.19,
       "estimatedTokens": null,
       "lines": null
     },
@@ -355,9 +465,9 @@
       "name": "progress.md",
       "dir": ".",
       "ext": ".md",
-      "sizeBytes": 944,
-      "sizeKB": 0.92,
-      "estimatedTokens": 384,
+      "sizeBytes": 963,
+      "sizeKB": 0.94,
+      "estimatedTokens": 393,
       "lines": 23
     },
     {
@@ -932,7 +1042,7 @@
         "name": "progress.log",
         "path": "progress.log",
         "type": "file",
-        "sizeBytes": 1846,
+        "sizeBytes": 2241,
         "estimatedTokens": 0,
         "lines": null,
         "ext": ".log"
@@ -959,8 +1069,8 @@
         "name": "progress.md",
         "path": "progress.md",
         "type": "file",
-        "sizeBytes": 944,
-        "estimatedTokens": 384,
+        "sizeBytes": 963,
+        "estimatedTokens": 393,
         "lines": 23,
         "ext": ".md"
       },
@@ -1109,6 +1219,15 @@
             "lines": 118,
             "ext": ".md"
           },
+          "run-item.py": {
+            "name": "run-item.py",
+            "path": "content-pipeline/run-item.py",
+            "type": "file",
+            "sizeBytes": 10544,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".py"
+          },
           "mvp-runbook.md": {
             "name": "mvp-runbook.md",
             "path": "content-pipeline/mvp-runbook.md",
@@ -1116,6 +1235,15 @@
             "sizeBytes": 1387,
             "estimatedTokens": 625,
             "lines": 66,
+            "ext": ".md"
+          },
+          "README.md": {
+            "name": "README.md",
+            "path": "content-pipeline/README.md",
+            "type": "file",
+            "sizeBytes": 849,
+            "estimatedTokens": 379,
+            "lines": 32,
             "ext": ".md"
           },
           "style-guide.md": {
@@ -1126,6 +1254,25 @@
             "estimatedTokens": 1033,
             "lines": 70,
             "ext": ".md"
+          },
+          "transcripts": {
+            "name": "transcripts",
+            "path": "content-pipeline/transcripts",
+            "type": "dir",
+            "children": {
+              "example-001.txt": {
+                "name": "example-001.txt",
+                "path": "content-pipeline/transcripts/example-001.txt",
+                "type": "file",
+                "sizeBytes": 738,
+                "estimatedTokens": 334,
+                "lines": 5,
+                "ext": ".txt"
+              }
+            },
+            "sizeBytes": 738,
+            "estimatedTokens": 334,
+            "files": 1
           },
           "prompts": {
             "name": "prompts",
@@ -1141,6 +1288,15 @@
                 "lines": 125,
                 "ext": ".md"
               },
+              "runner-notes.md": {
+                "name": "runner-notes.md",
+                "path": "content-pipeline/prompts/runner-notes.md",
+                "type": "file",
+                "sizeBytes": 619,
+                "estimatedTokens": 282,
+                "lines": 20,
+                "ext": ".md"
+              },
               "article-generation.md": {
                 "name": "article-generation.md",
                 "path": "content-pipeline/prompts/article-generation.md",
@@ -1151,9 +1307,28 @@
                 "ext": ".md"
               }
             },
-            "sizeBytes": 7064,
-            "estimatedTokens": 3204,
-            "files": 2
+            "sizeBytes": 7683,
+            "estimatedTokens": 3486,
+            "files": 3
+          },
+          "input": {
+            "name": "input",
+            "path": "content-pipeline/input",
+            "type": "dir",
+            "children": {
+              "example-001.yaml": {
+                "name": "example-001.yaml",
+                "path": "content-pipeline/input/example-001.yaml",
+                "type": "file",
+                "sizeBytes": 503,
+                "estimatedTokens": 229,
+                "lines": 13,
+                "ext": ".yaml"
+              }
+            },
+            "sizeBytes": 503,
+            "estimatedTokens": 229,
+            "files": 1
           },
           "examples": {
             "name": "examples",
@@ -1182,11 +1357,105 @@
             "sizeBytes": 1241,
             "estimatedTokens": 563,
             "files": 2
+          },
+          "drafts": {
+            "name": "drafts",
+            "path": "content-pipeline/drafts",
+            "type": "dir",
+            "children": {
+              "example-001.yaml": {
+                "name": "example-001.yaml",
+                "path": "content-pipeline/drafts/example-001.yaml",
+                "type": "file",
+                "sizeBytes": 2308,
+                "estimatedTokens": 779,
+                "lines": 30,
+                "ext": ".yaml"
+              }
+            },
+            "sizeBytes": 2308,
+            "estimatedTokens": 779,
+            "files": 1
+          },
+          "metadata": {
+            "name": "metadata",
+            "path": "content-pipeline/metadata",
+            "type": "dir",
+            "children": {
+              "example-001.yaml": {
+                "name": "example-001.yaml",
+                "path": "content-pipeline/metadata/example-001.yaml",
+                "type": "file",
+                "sizeBytes": 926,
+                "estimatedTokens": 395,
+                "lines": 22,
+                "ext": ".yaml"
+              }
+            },
+            "sizeBytes": 926,
+            "estimatedTokens": 395,
+            "files": 1
+          },
+          "published": {
+            "name": "published",
+            "path": "content-pipeline/published",
+            "type": "dir",
+            "children": {
+              "ai.md": {
+                "name": "ai.md",
+                "path": "content-pipeline/published/ai.md",
+                "type": "file",
+                "sizeBytes": 2395,
+                "estimatedTokens": 812,
+                "lines": 49,
+                "ext": ".md"
+              },
+              "example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md": {
+                "name": "example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+                "path": "content-pipeline/published/example-001-ai-adoption-biggest-risk-not-too-fast-workflow-unclear-process-autom.md",
+                "type": "file",
+                "sizeBytes": 2473,
+                "estimatedTokens": 847,
+                "lines": 49,
+                "ext": ".md"
+              },
+              "ai-adoption-bad-process-automation-risk.md": {
+                "name": "ai-adoption-bad-process-automation-risk.md",
+                "path": "content-pipeline/published/ai-adoption-bad-process-automation-risk.md",
+                "type": "file",
+                "sizeBytes": 3706,
+                "estimatedTokens": 803,
+                "lines": 66,
+                "ext": ".md"
+              }
+            },
+            "sizeBytes": 8574,
+            "estimatedTokens": 2462,
+            "files": 3
+          },
+          "logs": {
+            "name": "logs",
+            "path": "content-pipeline/logs",
+            "type": "dir",
+            "children": {
+              "example-001.log": {
+                "name": "example-001.log",
+                "path": "content-pipeline/logs/example-001.log",
+                "type": "file",
+                "sizeBytes": 394,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".log"
+              }
+            },
+            "sizeBytes": 394,
+            "estimatedTokens": 0,
+            "files": 1
           }
         },
-        "sizeBytes": 21046,
-        "estimatedTokens": 9191,
-        "files": 10
+        "sizeBytes": 46501,
+        "estimatedTokens": 14051,
+        "files": 21
       },
       "token-dashboard-github": {
         "name": "token-dashboard-github",
@@ -1409,9 +1678,9 @@
             "name": "TASKS.md",
             "path": "automation/TASKS.md",
             "type": "file",
-            "sizeBytes": 4025,
-            "estimatedTokens": 1604,
-            "lines": 127,
+            "sizeBytes": 4140,
+            "estimatedTokens": 1644,
+            "lines": 128,
             "ext": ".md"
           },
           "remote-visual-cdp.mjs": {
@@ -1487,8 +1756,8 @@
             "ext": ".sh"
           }
         },
-        "sizeBytes": 27802,
-        "estimatedTokens": 5427,
+        "sizeBytes": 27917,
+        "estimatedTokens": 5467,
         "files": 9
       },
       "memory": {
@@ -1882,8 +2151,8 @@
         "files": 1
       }
     },
-    "sizeBytes": 771562,
-    "estimatedTokens": 259747,
-    "files": 85
+    "sizeBytes": 797546,
+    "estimatedTokens": 264656,
+    "files": 96
   }
 }
