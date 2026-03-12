@@ -86,29 +86,29 @@
     {
       "sessionId": "bd6ac66f-95b7-4deb-b04d-f1b612bc78ad",
       "path": "/home/node/.openclaw/agents/main/sessions/bd6ac66f-95b7-4deb-b04d-f1b612bc78ad.jsonl",
-      "sizeBytes": 1264963,
+      "sizeBytes": 1432234,
       "startedAt": "2026-03-12T04:03:37.076Z",
-      "lastTimestamp": "2026-03-12T06:23:41.976Z",
+      "lastTimestamp": "2026-03-12T06:32:52.814Z",
       "dominantModel": "gpt-5.4",
       "models": {
-        "gpt-5.4": 63
+        "gpt-5.4": 75
       },
-      "assistantTurns": 63,
+      "assistantTurns": 75,
       "usage": {
-        "input": 554295,
-        "output": 18550,
-        "cacheRead": 2290816,
+        "input": 623045,
+        "output": 21867,
+        "cacheRead": 3002240,
         "cacheWrite": 0,
-        "total": 2863661,
-        "cost": 2.2366915000000005,
-        "assistantTurns": 63
+        "total": 3647152,
+        "cost": 2.6361775000000005,
+        "assistantTurns": 75
       },
       "firstUserSnippet": "System: [2026-03-12 04:03:36 UTC] Reminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nA scheduled reminder has been triggered. The reminder content is:\n\nReminder: this is a periodic 20-minute progress check. If a long-running task is currently in progress, review recent context and report a concise status update to the user. If no long task is active or nothing needs attention, do not send a proactive message.\n\nPlease relay this reminder to the user in a helpful and friendly way.\nCurre",
       "kindGuess": "direct",
       "roleCounts": {
-        "user": 35,
-        "assistant": 63,
-        "toolResult": 28
+        "user": 39,
+        "assistant": 75,
+        "toolResult": 36
       }
     }
   ]

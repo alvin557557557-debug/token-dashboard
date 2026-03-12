@@ -645,8 +645,28 @@
       "name": ".gitignore",
       "dir": "token-dashboard-github",
       "ext": "",
-      "sizeBytes": 169,
-      "sizeKB": 0.17,
+      "sizeBytes": 210,
+      "sizeKB": 0.21,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/.sync.env",
+      "name": ".sync.env",
+      "dir": "token-dashboard-github",
+      "ext": ".env",
+      "sizeBytes": 227,
+      "sizeKB": 0.22,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/.sync.env.example",
+      "name": ".sync.env.example",
+      "dir": "token-dashboard-github",
+      "ext": ".example",
+      "sizeBytes": 161,
+      "sizeKB": 0.16,
       "estimatedTokens": null,
       "lines": null
     },
@@ -745,8 +765,8 @@
       "name": "index.html",
       "dir": "token-dashboard-github/public",
       "ext": ".html",
-      "sizeBytes": 4988,
-      "sizeKB": 4.87,
+      "sizeBytes": 4949,
+      "sizeKB": 4.83,
       "estimatedTokens": null,
       "lines": null
     },
@@ -757,6 +777,16 @@
       "ext": ".sh",
       "sizeBytes": 830,
       "sizeKB": 0.81,
+      "estimatedTokens": null,
+      "lines": null
+    },
+    {
+      "path": "token-dashboard-github/scripts/sync-data-from-env.sh",
+      "name": "sync-data-from-env.sh",
+      "dir": "token-dashboard-github/scripts",
+      "ext": ".sh",
+      "sizeBytes": 413,
+      "sizeKB": 0.4,
       "estimatedTokens": null,
       "lines": null
     },
@@ -1058,6 +1088,15 @@
         "path": "token-dashboard-github",
         "type": "dir",
         "children": {
+          ".sync.env.example": {
+            "name": ".sync.env.example",
+            "path": "token-dashboard-github/.sync.env.example",
+            "type": "file",
+            "sizeBytes": 161,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".example"
+          },
           "Dockerfile": {
             "name": "Dockerfile",
             "path": "token-dashboard-github/Dockerfile",
@@ -1085,6 +1124,15 @@
             "lines": null,
             "ext": ".example"
           },
+          ".sync.env": {
+            "name": ".sync.env",
+            "path": "token-dashboard-github/.sync.env",
+            "type": "file",
+            "sizeBytes": 227,
+            "estimatedTokens": 0,
+            "lines": null,
+            "ext": ".env"
+          },
           "README.md": {
             "name": "README.md",
             "path": "token-dashboard-github/README.md",
@@ -1098,7 +1146,7 @@
             "name": ".gitignore",
             "path": "token-dashboard-github/.gitignore",
             "type": "file",
-            "sizeBytes": 169,
+            "sizeBytes": 210,
             "estimatedTokens": 0,
             "lines": null,
             "ext": ""
@@ -1108,6 +1156,15 @@
             "path": "token-dashboard-github/scripts",
             "type": "dir",
             "children": {
+              "sync-data-from-env.sh": {
+                "name": "sync-data-from-env.sh",
+                "path": "token-dashboard-github/scripts/sync-data-from-env.sh",
+                "type": "file",
+                "sizeBytes": 413,
+                "estimatedTokens": 0,
+                "lines": null,
+                "ext": ".sh"
+              },
               "init-data-branch.sh": {
                 "name": "init-data-branch.sh",
                 "path": "token-dashboard-github/scripts/init-data-branch.sh",
@@ -1127,9 +1184,9 @@
                 "ext": ".sh"
               }
             },
-            "sizeBytes": 2187,
+            "sizeBytes": 2600,
             "estimatedTokens": 0,
-            "files": 2
+            "files": 3
           },
           "public": {
             "name": "public",
@@ -1140,13 +1197,13 @@
                 "name": "index.html",
                 "path": "token-dashboard-github/public/index.html",
                 "type": "file",
-                "sizeBytes": 4988,
+                "sizeBytes": 4949,
                 "estimatedTokens": 0,
                 "lines": null,
                 "ext": ".html"
               }
             },
-            "sizeBytes": 4988,
+            "sizeBytes": 4949,
             "estimatedTokens": 0,
             "files": 1
           },
@@ -1215,9 +1272,9 @@
             "files": 6
           }
         },
-        "sizeBytes": 10828,
+        "sizeBytes": 11631,
         "estimatedTokens": 1049,
-        "files": 14
+        "files": 17
       },
       ".clawhub": {
         "name": ".clawhub",
@@ -1720,8 +1777,8 @@
         "files": 1
       }
     },
-    "sizeBytes": 755990,
+    "sizeBytes": 756793,
     "estimatedTokens": 256399,
-    "files": 77
+    "files": 80
   }
 }
