@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T10:32:58Z",
+  "generatedAtUtc": "2026-03-12T11:02:42Z",
   "counts": {
-    "files": 5639,
-    "sessions": 11,
+    "files": 5641,
+    "sessions": 12,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -230,14 +230,14 @@
       "lines": 94
     },
     {
-      "path": "content-pipeline/transcripts/openclaw-multi-agents-guide.txt",
-      "name": "openclaw-multi-agents-guide.txt",
-      "dir": "content-pipeline/transcripts",
-      "ext": ".txt",
-      "sizeBytes": 10829,
-      "sizeKB": 10.58,
-      "estimatedTokens": 2060,
-      "lines": 355
+      "path": "content-pipeline/STATUS.md",
+      "name": "STATUS.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 4640,
+      "sizeKB": 4.53,
+      "estimatedTokens": 2106,
+      "lines": 206
     }
   ]
 }
