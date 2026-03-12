@@ -56,8 +56,8 @@
 
   <script>
     const DEFAULT_CONFIG = {
-      owner: 'YOUR_GITHUB_OWNER',
-      repo: 'YOUR_REPO_NAME',
+      owner: 'alvin557557557-debug',
+      repo: 'token-dashboard',
       branch: 'data'
     };
 
@@ -81,7 +81,7 @@
     async function boot() {
       const statusEl = document.getElementById('status');
       document.getElementById('source').textContent = `${CONFIG.owner}/${CONFIG.repo}@${CONFIG.branch}`;
-      if (CONFIG.owner === 'YOUR_GITHUB_OWNER' || CONFIG.repo === 'YOUR_REPO_NAME') {
+      if (!CONFIG.owner || !CONFIG.repo) {
         statusEl.innerHTML = '<span class="warn">尚未設定 GitHub repo</span>：請在網址加上 <code>?owner=你的帳號&repo=你的repo</code>，或直接把 <code>public/index.html</code> 內預設值改掉。';
         return;
       }
