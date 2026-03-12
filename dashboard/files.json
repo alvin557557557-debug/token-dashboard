@@ -145,10 +145,10 @@
       "name": "TASKS.md",
       "dir": "automation",
       "ext": ".md",
-      "sizeBytes": 3748,
-      "sizeKB": 3.66,
-      "estimatedTokens": 1481,
-      "lines": 124
+      "sizeBytes": 4025,
+      "sizeKB": 3.93,
+      "estimatedTokens": 1604,
+      "lines": 127
     },
     {
       "path": "automation/codex-request.md",
@@ -221,6 +221,46 @@
       "lines": 57
     },
     {
+      "path": "content-pipeline/examples/example-item.yaml",
+      "name": "example-item.yaml",
+      "dir": "content-pipeline/examples",
+      "ext": ".yaml",
+      "sizeBytes": 503,
+      "sizeKB": 0.49,
+      "estimatedTokens": 229,
+      "lines": 13
+    },
+    {
+      "path": "content-pipeline/examples/example-transcript.txt",
+      "name": "example-transcript.txt",
+      "dir": "content-pipeline/examples",
+      "ext": ".txt",
+      "sizeBytes": 738,
+      "sizeKB": 0.72,
+      "estimatedTokens": 334,
+      "lines": 5
+    },
+    {
+      "path": "content-pipeline/handoff-schema.md",
+      "name": "handoff-schema.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1638,
+      "sizeKB": 1.6,
+      "estimatedTokens": 745,
+      "lines": 118
+    },
+    {
+      "path": "content-pipeline/mvp-runbook.md",
+      "name": "mvp-runbook.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1387,
+      "sizeKB": 1.35,
+      "estimatedTokens": 625,
+      "lines": 66
+    },
+    {
       "path": "content-pipeline/prompts/article-generation.md",
       "name": "article-generation.md",
       "dir": "content-pipeline/prompts",
@@ -229,6 +269,16 @@
       "sizeKB": 4.34,
       "estimatedTokens": 2014,
       "lines": 182
+    },
+    {
+      "path": "content-pipeline/prompts/metadata-generation.md",
+      "name": "metadata-generation.md",
+      "dir": "content-pipeline/prompts",
+      "ext": ".md",
+      "sizeBytes": 2617,
+      "sizeKB": 2.56,
+      "estimatedTokens": 1190,
+      "lines": 125
     },
     {
       "path": "content-pipeline/sources.md",
@@ -295,8 +345,8 @@
       "name": "progress.log",
       "dir": ".",
       "ext": ".log",
-      "sizeBytes": 1646,
-      "sizeKB": 1.61,
+      "sizeBytes": 1846,
+      "sizeKB": 1.8,
       "estimatedTokens": null,
       "lines": null
     },
@@ -305,10 +355,10 @@
       "name": "progress.md",
       "dir": ".",
       "ext": ".md",
-      "sizeBytes": 678,
-      "sizeKB": 0.66,
-      "estimatedTokens": 282,
-      "lines": 18
+      "sizeBytes": 944,
+      "sizeKB": 0.92,
+      "estimatedTokens": 384,
+      "lines": 23
     },
     {
       "path": "rw_test.txt",
@@ -765,8 +815,8 @@
       "name": "index.html",
       "dir": "token-dashboard-github/public",
       "ext": ".html",
-      "sizeBytes": 4949,
-      "sizeKB": 4.83,
+      "sizeBytes": 12092,
+      "sizeKB": 11.81,
       "estimatedTokens": null,
       "lines": null
     },
@@ -882,7 +932,7 @@
         "name": "progress.log",
         "path": "progress.log",
         "type": "file",
-        "sizeBytes": 1646,
+        "sizeBytes": 1846,
         "estimatedTokens": 0,
         "lines": null,
         "ext": ".log"
@@ -909,9 +959,9 @@
         "name": "progress.md",
         "path": "progress.md",
         "type": "file",
-        "sizeBytes": 678,
-        "estimatedTokens": 282,
-        "lines": 18,
+        "sizeBytes": 944,
+        "estimatedTokens": 384,
+        "lines": 23,
         "ext": ".md"
       },
       "HEARTBEAT.md": {
@@ -1050,6 +1100,24 @@
             "lines": 163,
             "ext": ".md"
           },
+          "handoff-schema.md": {
+            "name": "handoff-schema.md",
+            "path": "content-pipeline/handoff-schema.md",
+            "type": "file",
+            "sizeBytes": 1638,
+            "estimatedTokens": 745,
+            "lines": 118,
+            "ext": ".md"
+          },
+          "mvp-runbook.md": {
+            "name": "mvp-runbook.md",
+            "path": "content-pipeline/mvp-runbook.md",
+            "type": "file",
+            "sizeBytes": 1387,
+            "estimatedTokens": 625,
+            "lines": 66,
+            "ext": ".md"
+          },
           "style-guide.md": {
             "name": "style-guide.md",
             "path": "content-pipeline/style-guide.md",
@@ -1064,6 +1132,15 @@
             "path": "content-pipeline/prompts",
             "type": "dir",
             "children": {
+              "metadata-generation.md": {
+                "name": "metadata-generation.md",
+                "path": "content-pipeline/prompts/metadata-generation.md",
+                "type": "file",
+                "sizeBytes": 2617,
+                "estimatedTokens": 1190,
+                "lines": 125,
+                "ext": ".md"
+              },
               "article-generation.md": {
                 "name": "article-generation.md",
                 "path": "content-pipeline/prompts/article-generation.md",
@@ -1074,14 +1151,42 @@
                 "ext": ".md"
               }
             },
-            "sizeBytes": 4447,
-            "estimatedTokens": 2014,
-            "files": 1
+            "sizeBytes": 7064,
+            "estimatedTokens": 3204,
+            "files": 2
+          },
+          "examples": {
+            "name": "examples",
+            "path": "content-pipeline/examples",
+            "type": "dir",
+            "children": {
+              "example-transcript.txt": {
+                "name": "example-transcript.txt",
+                "path": "content-pipeline/examples/example-transcript.txt",
+                "type": "file",
+                "sizeBytes": 738,
+                "estimatedTokens": 334,
+                "lines": 5,
+                "ext": ".txt"
+              },
+              "example-item.yaml": {
+                "name": "example-item.yaml",
+                "path": "content-pipeline/examples/example-item.yaml",
+                "type": "file",
+                "sizeBytes": 503,
+                "estimatedTokens": 229,
+                "lines": 13,
+                "ext": ".yaml"
+              }
+            },
+            "sizeBytes": 1241,
+            "estimatedTokens": 563,
+            "files": 2
           }
         },
-        "sizeBytes": 14163,
-        "estimatedTokens": 6068,
-        "files": 5
+        "sizeBytes": 21046,
+        "estimatedTokens": 9191,
+        "files": 10
       },
       "token-dashboard-github": {
         "name": "token-dashboard-github",
@@ -1197,13 +1302,13 @@
                 "name": "index.html",
                 "path": "token-dashboard-github/public/index.html",
                 "type": "file",
-                "sizeBytes": 4949,
+                "sizeBytes": 12092,
                 "estimatedTokens": 0,
                 "lines": null,
                 "ext": ".html"
               }
             },
-            "sizeBytes": 4949,
+            "sizeBytes": 12092,
             "estimatedTokens": 0,
             "files": 1
           },
@@ -1272,7 +1377,7 @@
             "files": 6
           }
         },
-        "sizeBytes": 11631,
+        "sizeBytes": 18774,
         "estimatedTokens": 1049,
         "files": 17
       },
@@ -1304,9 +1409,9 @@
             "name": "TASKS.md",
             "path": "automation/TASKS.md",
             "type": "file",
-            "sizeBytes": 3748,
-            "estimatedTokens": 1481,
-            "lines": 124,
+            "sizeBytes": 4025,
+            "estimatedTokens": 1604,
+            "lines": 127,
             "ext": ".md"
           },
           "remote-visual-cdp.mjs": {
@@ -1382,8 +1487,8 @@
             "ext": ".sh"
           }
         },
-        "sizeBytes": 27525,
-        "estimatedTokens": 5304,
+        "sizeBytes": 27802,
+        "estimatedTokens": 5427,
         "files": 9
       },
       "memory": {
@@ -1777,8 +1882,8 @@
         "files": 1
       }
     },
-    "sizeBytes": 756793,
-    "estimatedTokens": 256399,
-    "files": 80
+    "sizeBytes": 771562,
+    "estimatedTokens": 259747,
+    "files": 85
   }
 }

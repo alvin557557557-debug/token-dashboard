@@ -1,8 +1,8 @@
 {
-  "generatedAtUtc": "2026-03-12T06:34:18Z",
+  "generatedAtUtc": "2026-03-12T07:32:52Z",
   "counts": {
-    "files": 80,
-    "sessions": 4,
+    "files": 85,
+    "sessions": 5,
     "cronRunsDetected": 1,
     "startupTurnsDetected": 0
   },
@@ -184,10 +184,10 @@
       "name": "TASKS.md",
       "dir": "automation",
       "ext": ".md",
-      "sizeBytes": 3748,
-      "sizeKB": 3.66,
-      "estimatedTokens": 1481,
-      "lines": 124
+      "sizeBytes": 4025,
+      "sizeKB": 3.93,
+      "estimatedTokens": 1604,
+      "lines": 127
     },
     {
       "path": "automation/codex-request.md",
@@ -200,6 +200,16 @@
       "lines": 78
     },
     {
+      "path": "content-pipeline/prompts/metadata-generation.md",
+      "name": "metadata-generation.md",
+      "dir": "content-pipeline/prompts",
+      "ext": ".md",
+      "sizeBytes": 2617,
+      "sizeKB": 2.56,
+      "estimatedTokens": 1190,
+      "lines": 125
+    },
+    {
       "path": "content-pipeline/style-guide.md",
       "name": "style-guide.md",
       "dir": "content-pipeline",
@@ -210,6 +220,16 @@
       "lines": 70
     },
     {
+      "path": "content-pipeline/handoff-schema.md",
+      "name": "handoff-schema.md",
+      "dir": "content-pipeline",
+      "ext": ".md",
+      "sizeBytes": 1638,
+      "sizeKB": 1.6,
+      "estimatedTokens": 745,
+      "lines": 118
+    },
+    {
       "path": "content-pipeline/article-schema.md",
       "name": "article-schema.md",
       "dir": "content-pipeline",
@@ -218,26 +238,6 @@
       "sizeKB": 1.57,
       "estimatedTokens": 729,
       "lines": 57
-    },
-    {
-      "path": "token-dashboard-github/README.md",
-      "name": "README.md",
-      "dir": "token-dashboard-github",
-      "ext": ".md",
-      "sizeBytes": 2125,
-      "sizeKB": 2.08,
-      "estimatedTokens": 680,
-      "lines": 54
-    },
-    {
-      "path": "token-dashboard-auto/app/dashboard/startup.json",
-      "name": "startup.json",
-      "dir": "token-dashboard-auto/app/dashboard",
-      "ext": ".json",
-      "sizeBytes": 1415,
-      "sizeKB": 1.38,
-      "estimatedTokens": 644,
-      "lines": 61
     }
   ]
 }
